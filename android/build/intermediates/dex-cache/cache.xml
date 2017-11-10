@@ -2,6 +2,15 @@
 <items version="2" >
 
     <item
+        is-multidex="false"
+        jar="C:\Users\Alex\.android\build-cache\de9927cf79fae62f6b98204d64e3f4610ce42a51\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="D:\mobile\HabitBooster\android\app\build\intermediates\pre-dexed\debug\classes_f0225121753a36793b12a5ecade20e6df51ca8f0.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Users\Alex\.android\build-cache\326396de76620191c2b61fc55ecb392d4fa5a90a\output\jars\classes.jar"
         jumboMode="true"
@@ -9,6 +18,15 @@
         revision="26.0.1"
         sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
         <dex dex="D:\mobile\TestApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8a2202a61448d8455c14fab86a74d6d15973942d\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Alex\.android\build-cache\326396de76620191c2b61fc55ecb392d4fa5a90a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="D:\mobile\HabitBooster\android\app\build\intermediates\pre-dexed\debug\classes_8a2202a61448d8455c14fab86a74d6d15973942d.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,6 +84,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Alex\.android\build-cache\e4ed0a5f80135d5c0d3a74c88a62f80b289e55c6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="D:\mobile\HabitBooster\android\app\build\intermediates\pre-dexed\debug\classes_f05a847b8dc1fff244db020c583f7db2f4751ba7.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Alex\.android\build-cache\923a1f8fc7486aa371f758886a1b359136e3a764\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -111,6 +138,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\mobile\HabitBooster\android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\mobile\HabitBooster\android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ceab24310a0daad8f1ba1144de5d1215a53405fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Alex\.android\build-cache\1bc61756ef14e74da361bed08bacd4466b4b4c52\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -144,6 +180,15 @@
         revision="26.0.1"
         sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
         <dex dex="D:\mobile\TestApp\app\build\intermediates\pre-dexed\debug\classes_dd98b0cb0a74dd1eb30d35efe9c0e3a22a59b3f9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\mobile\HabitBooster\android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="698aa37affae0a2407cb33d1c3d006a88f042e48">
+        <dex dex="D:\mobile\HabitBooster\android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_3aa9821a1a559dfe9486c42a88c973f802909f4d\classes.dex" />
     </item>
     <item
         is-multidex="true"

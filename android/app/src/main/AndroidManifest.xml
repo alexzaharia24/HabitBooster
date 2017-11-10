@@ -27,7 +27,10 @@
         </activity>
         <activity
             android:name=".GoalDetailsActivity"
-            android:parentActivityName=".ViewGoalsActivity"></activity>
+            android:parentActivityName=".ViewGoalsActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

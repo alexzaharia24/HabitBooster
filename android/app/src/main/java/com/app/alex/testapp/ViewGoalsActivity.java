@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ViewGoalsActivity extends AppCompatActivity {
 
-    public static List<Goal> goals;
+    public static ArrayAdapter<Goal> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,24 +23,33 @@ public class ViewGoalsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_goals);
 //        String goals[] = new String[] {"Goal 1" , "Goal 2", "Goal 3"};
 
-        goals = new ArrayList<>();
-        goals.add(new Goal(1, "Run 5 miles daily", "07/09/2017", "07/12/2017"));
-        goals.add(new Goal(2, "Read 2 books a month", "10/09/2017", "05/11/2017"));
-        goals.add(new Goal(3, "Swim once a week", "20/09/2017", "04/12/2017"));
-        goals.add(new Goal(4, "Wake up at 06:00", "01/10/2017", "01/11/2017"));
+
 
         ListView listView = (ListView) findViewById(R.id.goals);
-        ArrayAdapter<Goal> adapter = new ArrayAdapter<>(this, R.layout.goal_item, goals);
+        adapter = new ArrayAdapter<>(this, R.layout.goal_item, MainActivity.goals);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(viewGoalDetails);
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+//        if (requestCode == 100) {
+//            adapter.notifyDataSetChanged();
+
+//            Intent intent = getIntent();
+//            finish();
+//            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+//            startActivity(intent);
+//        }
     }
 
     private AdapterView.OnItemClickListener viewGoalDetails = new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             Log.d("Goal item clickk", "Goal clicked.");
-            Goal goal = goals.get(position);
+            Goal goal = MainActivity.goals.get(position);
             Intent intent = new Intent(ViewGoalsActivity.this, GoalDetailsActivity.class);
             intent.putExtra("position", position);
             intent.putExtra("id", goal.getId());
@@ -48,7 +57,7 @@ public class ViewGoalsActivity extends AppCompatActivity {
             intent.putExtra("startDate", goal.getStartDate());
             intent.putExtra("endDate", goal.getEndDate());
 
-            startActivity(intent);
+            startActivityForResult(intent, 100);
         }
     };
 }

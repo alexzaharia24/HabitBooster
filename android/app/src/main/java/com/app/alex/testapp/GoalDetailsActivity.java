@@ -12,6 +12,7 @@ public class GoalDetailsActivity extends AppCompatActivity {
     private EditText inputTitle;
     private EditText inputStartDate;
     private EditText inputEndDate;
+    private int position;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class GoalDetailsActivity extends AppCompatActivity {
         String title, startDate, endDate;
 
         Intent intent = getIntent();
+        position = intent.getIntExtra("position", -1);
         id = intent.getIntExtra("id", 0);
         title = intent.getStringExtra("title");
         startDate = intent.getStringExtra("startDate");
@@ -39,10 +41,17 @@ public class GoalDetailsActivity extends AppCompatActivity {
     }
 
     public void saveGoal(View view) {
-        int id =  Integer.parseInt(inputId.getText().toString());
+        int id = Integer.parseInt(inputId.getText().toString());
         String title = inputTitle.getText().toString();
         String startDate = inputStartDate.getText().toString();
         String endDate = inputEndDate.getText().toString();
 
+        MainActivity.goals.get(position).setId(id);
+        MainActivity.goals.get(position).setTitle(title);
+        MainActivity.goals.get(position).setStartDate(startDate);
+        MainActivity.goals.get(position).setEndDate(endDate);
+
+        ViewGoalsActivity.adapter.notifyDataSetChanged();
+        finish();
     }
 }
