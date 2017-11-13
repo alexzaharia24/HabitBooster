@@ -1,11 +1,4 @@
-import {combineReducers} from 'redux';
 import {EDIT_GOAL} from "../actions/index";
-
-// import * as GoalReducers from 'goals';
-//
-// export default combineReducers(Object.assign(
-//     GoalReducers
-// ));
 
 const initialState = {
     goals: [
@@ -29,7 +22,6 @@ const initialState = {
         },
     ]
 };
-
 
 function goals(state = [], action) {
     switch(action.type) {
@@ -59,13 +51,3 @@ export const Reducer = (state = initialState, action) => {
         goals: goals(state, action)
     }
 };
-
-
-// import { combineReducers } from 'redux'
-//
-// const todoApp = combineReducers({
-//     visibilityFilter,
-//     todos
-// })
-//
-// export default todoApp

@@ -32,7 +32,6 @@ export default class Main extends Component {
 const styles = StyleSheet.create({
     mainView: {
         flex: 1,
-        // justifyContent: 'center'
     },
     signUpBtn: {
         flexDirection: 'row',

@@ -17,7 +17,6 @@ class GoalDetail extends Component {
     }
 
     _updateGoal() {
-        // console.log(this.state);
         console.log("Update: ", this.state.id);
         this.props.updateGoal(
             this.state.id,

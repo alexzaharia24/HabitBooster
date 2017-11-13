@@ -16,7 +16,7 @@ class ViewGoals extends Component {
     _renderGoalItem = ({item}) => {
         return (
             <TouchableHighlight
-                onPress={()=>this._onSelectItem(item)}
+                onPress={() => this._onSelectItem(item)}
             >
                 <Text> {item.id}. {item.title} </Text>
             </TouchableHighlight>
