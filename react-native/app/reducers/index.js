@@ -1,4 +1,5 @@
 import {EDIT_GOAL} from "../actions/index";
+import {users as usersReducer} from './users';
 
 const initialState = {
     goals: [
@@ -20,16 +21,17 @@ const initialState = {
             startDate: '03/11/2017',
             endDate: '21/11/2017'
         },
-    ]
+    ],
+    user: {}
 };
 
 function goals(state = [], action) {
     switch(action.type) {
         case EDIT_GOAL:
-            return  updatedGoals(state.goals, action);
+            return  updatedGoals(state, action);
             break;
         default:
-            return state.goals;
+            return state;
     }
 }
 
@@ -46,8 +48,9 @@ function updatedGoals(state = [], action) {
     });
 }
 
-export const Reducer = (state = initialState, action) => {
+export const reducer = (state = initialState, action) => {
     return {
-        goals: goals(state, action)
+        goals: goals(state.goals, action),
+        user: usersReducer(state.user, action)
     }
 };

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, TextInput, TouchableHighlight} from "react-native";
 import {Linking} from 'react-native';
+import * as firebase from 'firebase';
 
 export default class SignUp extends Component {
     constructor(props) {
@@ -9,6 +10,17 @@ export default class SignUp extends Component {
             name: "",
             email: "",
             password: ""
+        }
+    }
+
+    async _createUser() {
+        try {
+            await firebase.auth()
+                .createUserWithEmailAndPassword(this.state.email, this.state.password);
+
+            console.log("User created: ", this.state.email);
+        } catch (error) {
+            console.log(error);
         }
     }
 
@@ -55,6 +67,7 @@ export default class SignUp extends Component {
                     <TouchableHighlight
                         title={"Create account"}
                         onPress={() => {
+                            this._createUser()
                             this._sendEmail()
                         }}
                         style={styles.saveBtn}

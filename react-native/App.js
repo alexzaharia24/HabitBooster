@@ -14,8 +14,8 @@ import {createStore} from 'redux';
 import {Reducer} from './app/reducers';
 import Provider from "react-redux/src/components/Provider";
 import GoalDetail from "./app/containers/GoalDetail";
-
-let appStore = createStore(Reducer);
+import SignIn from './app/containers/SignIn';
+import {store as appStore} from './app/store';
 
 export default class App extends Component {
     render() {
@@ -23,6 +23,12 @@ export default class App extends Component {
             <Provider store={appStore}>
                 <Router>
                     <Scene key="root">
+                        <Scene
+                            key="signIn"
+                            title="Sign In"
+                            component={SignIn}
+                            hideNavBar={true}
+                        />
                         <Scene
                             key="main"
                             title="Main"
