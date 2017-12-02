@@ -2,6 +2,7 @@ export const SIGN_IN_STARTED = 'SIGN_IN_STARTED';
 export const SIGN_IN_SUCCESS = 'SIGN_IN_SUCCESS';
 export const SIGN_IN_FAIL = 'SIGN_IN_FAIL';
 export const SAVE_USER_TOKEN = 'SAVE_USER_TOKEN';
+export const SAVE_USER = 'SAVE_USER';
 
 export const SIGN_UP_STARTED = 'SIGN_UP_STARTED';
 export const SIGN_UP_SUCCESS = 'SIGN_UP_SUCCESS';

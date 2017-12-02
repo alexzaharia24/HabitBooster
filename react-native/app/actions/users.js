@@ -1,10 +1,10 @@
 import {
     SIGN_IN_STARTED, SIGN_IN_SUCCESS, SIGN_IN_FAIL,
-    SIGN_UP_STARTED, SIGN_UP_SUCCESS, SIGN_UP_FAIL, SAVE_USER_TOKEN,
+    SIGN_UP_STARTED, SIGN_UP_SUCCESS, SIGN_UP_FAIL, SAVE_USER_TOKEN, SAVE_USER,
     SIGN_OUT_STARTED, SIGN_OUT_SUCCESS, SIGN_OUT_FAIL
 } from './types'
 
-import * as firebase from 'firebase';
+import * as firebase from 'firebase'
 
 export const signInStarted = (email) => {
     return {
@@ -37,22 +37,36 @@ export const saveUserToken = (token) => {
     }
 };
 
+export const saveUser = (email, token) => {
+    return {
+        type: SAVE_USER,
+        email: email,
+        token: token,
+    }
+}
+
 export const signIn = (email, password) => {
-    email = "abc@c.com";
-    password = "123456";
+    // email = "abc@c.com";
+    // password = "123456";
     return (dispatch) => {
         dispatch(signInStarted(email));
-        console.log("Email" , email, " Pass: ", password);
+        console.log("Email", email, " Pass: ", password);
 
         return firebase.auth().signInWithEmailAndPassword(email, password)
-            .then((response) => {
+            .then(async (response) => {
                 dispatch(signInSuccess());
                 console.log("R: ", response);
                 let token = null;
-                firebase.auth().currentUser.getIdToken()
+                console.log("Current user: ", firebase.auth().currentUser);
+                await firebase.auth().currentUser.getIdToken()
                     .then((response) => {
-                        dispatch(saveUserToken(response));
-                        console.log("Token: ", response);
+                        let promise = new Promise(
+                            (resolve, reject) => {
+                                dispatch(saveUserToken(response))
+                                resolve()
+                                reject()    
+                            }
+                        )
                     })
                     .catch((error) => {
                         console.log("Error: ", error);
@@ -141,7 +155,7 @@ export const signOutStarted = () => {
         type: SIGN_OUT_STARTED,
         fetching: true,
         email: null,
-        token: null,        
+        token: null,
     }
 };
 

@@ -24,6 +24,12 @@ export const users = (state = {}, action) => {
                 ...state,
                 token: action.token
             };
+        case types.SAVE_USER:
+            return {
+                ...state,
+                email: action.email,
+                token: action.token
+            };
         case types.SIGN_UP_STARTED:
             return {
                 ...state,

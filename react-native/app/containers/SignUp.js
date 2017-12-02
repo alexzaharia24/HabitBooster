@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, TextInput, TouchableHighlight} from "react-native";
 import {Linking} from 'react-native';
-import * as firebase from 'firebase';
+import * as firebase from 'firebase'
 
 export default class SignUp extends Component {
     constructor(props) {

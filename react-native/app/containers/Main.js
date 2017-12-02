@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, TouchableHighlight, Linking} from "react-native";
 import {Actions} from "react-native-router-flux";
-import * as firebase from 'firebase';
+import * as firebase from 'firebase'
 import {connect} from 'react-redux';
 import {signOut as signOutAction} from '../actions/users';
 
