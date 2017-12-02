@@ -1,3 +1,4 @@
+import { AsyncStorage } from 'react-native';
 import {
     SIGN_IN_STARTED, SIGN_IN_SUCCESS, SIGN_IN_FAIL,
     SIGN_UP_STARTED, SIGN_UP_SUCCESS, SIGN_UP_FAIL, SAVE_USER_TOKEN, SAVE_USER,
@@ -141,6 +142,7 @@ export const signOut = () => {
 
         return firebase.auth().signOut()
             .then(() => {
+                removeLocalCredentials();
                 dispatch(signOutSuccess());
             })
             .catch((error) => {
@@ -148,6 +150,11 @@ export const signOut = () => {
                 console.log("E: ", error);
             })
     }
+}
+
+const removeLocalCredentials = () => {
+    AsyncStorage.removeItem("email");
+    AsyncStorage.removeItem("token");
 }
 
 export const signOutStarted = () => {

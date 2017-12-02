@@ -22,13 +22,16 @@ class SignIn extends Component {
 
     async isSignedIn() {
         //could use firebase.auth().onAuthStateChanged but it fires multiple times
-        let token = await AsyncStorage.getItem("token");
-        let email = await AsyncStorage.getItem("email");
-        console.log('Local token: ', token);
-        console.log('Local email: ', email);
+        let localToken = await AsyncStorage.getItem("token");
+        let localEmail = await AsyncStorage.getItem("email");
+        console.log('Local token: ', localToken);
+        console.log('Local email: ', localEmail);
         console.log('Store user: ', this.props.user);
+
+        let storeToken = this.props.user.token;
+        let storeEmail = this.props.user.email;
         try {
-            if (token !== null && token !== undefined && email !== null && email !== undefined) {
+            if (localToken !== null && localToken !== undefined && localEmail !== null && localEmail !== undefined) {
                 // if (email !== this.props.user.email) {
                 //     throw Error("Local email is outdated.");
                 // }
@@ -36,10 +39,14 @@ class SignIn extends Component {
                 //     throw Error("Local token is outdated.");
                 // }
                 console.log("User already signed in");
-                this.props.saveUser(email, token);
+                this.props.saveUser(localEmail, localToken);
                 return true;
             }
-            console.log("All null");
+            if (storeToken !== null && storeToken !== undefined && storeEmail !== null && storeEmail !== undefined) {
+                console.log("User recently signed in");
+                return true;
+            }
+            console.log("Token or email null");
         } catch (error) {
             console.log(error);
             return false;
@@ -49,9 +56,9 @@ class SignIn extends Component {
         return false;
     }
 
-    saveUserLocal(email, token) {
-        AsyncStorage.setItem("email", email);
-        AsyncStorage.setItem("token", token);
+    async saveUserLocal(email, token) {
+        await AsyncStorage.setItem("email", email);
+        await AsyncStorage.setItem("token", token);
     }
 
     async redirectIfSignedIn() {
@@ -59,9 +66,9 @@ class SignIn extends Component {
             let authenticated = await this.isSignedIn()
             if (authenticated === true) {
                 console.log("Story usery: ", this.props.user);
-                Actions.main();
+                this.setState({ redirected: true });
+                Actions.home();
             }
-            this.setState({ redirected: true });
         }
     }
 
@@ -70,9 +77,9 @@ class SignIn extends Component {
         try {
             console.log("Try log in firebase");
             this.props.signIn(this.state.email, this.state.password)
-                .then(() => {
+                .then(async () => {
                     console.log("Store user: ", this.props.user);
-                    this.saveUserLocal(this.props.user.email, this.props.user.token);
+                    await this.saveUserLocal(this.props.user.email, this.props.user.token);
                 })
         } catch (error) {
             console.log("Could not sign in user: ");
@@ -81,7 +88,7 @@ class SignIn extends Component {
     }
 
     goToMain() {
-        Actions.main({ email: this.state.email });
+        Actions.home({ email: this.state.email });
     }
 
     render() {
@@ -134,7 +141,7 @@ class SignIn extends Component {
                         <Text> Don't have an account? </Text>
                         <Text style={{ fontWeight: 'bold' }}
                             onPress={() => {
-                                this.goToMain();
+                                Actions.signUp();
                             }}
                         > SIGN UP </Text>
                     </Text>
