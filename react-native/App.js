@@ -17,6 +17,7 @@ import GoalDetail from "./app/containers/GoalDetail";
 import SignIn from './app/containers/SignIn';
 import { store as appStore } from './app/store';
 import MenuDrawer from './app/containers/MenuDrawer';
+import AddGoal from './app/containers/AddGoal';
 
 export default class App extends Component {
     render() {
@@ -56,6 +57,11 @@ export default class App extends Component {
                                 key="goalDetail"
                                 title="Goal Detail"
                                 component={GoalDetail}
+                            />
+                            <Scene
+                                key="addGoal"
+                                title="Add Goal"
+                                component={AddGoal}
                             />
                         </Drawer>
                     </Scene>

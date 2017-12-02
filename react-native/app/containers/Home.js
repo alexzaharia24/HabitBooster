@@ -30,7 +30,7 @@ export class Home extends Component {
                 </TouchableHighlight>
                 <ActionButton
                     buttonColor="rgba(231,76,60,1)"
-                    onPress={() => { console.log("Button pressed") }}
+                    onPress={() => { Actions.addGoal() }}
                 />
 
             </View>
