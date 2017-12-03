@@ -17,6 +17,7 @@ export class Home extends Component {
     }
 
     render() {
+        console.log("home props: ", this.props);
         return (
             <View style={styles.mainView}>
                 <Text> Welcome, {this.props.user.name}! </Text>

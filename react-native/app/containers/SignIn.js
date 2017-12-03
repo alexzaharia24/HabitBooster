@@ -12,84 +12,97 @@ class SignIn extends Component {
     }
 
     componentDidMount() {
-        // this.redirectIfSignedIn();
-
-        firebase.auth().onAuthStateChanged(
-            async (user) => {
-                if (user) {
-                    let uid = await user.uid;
-                    let email = await user.email;
-                    let token = await user.getIdToken();
-                    let name = await user.displayName;
-                    console.log("User auth ", name);
-
-                    this.props.saveUser(email, token, uid, name);
-                    Actions.home();
-
-                } else {
-                    console.log("User not auth")
-                }
-            })
+        //check if user is signed in
+        this.isSignedIn();
     }
 
     componentWillReceiveProps() {
         // console.log("Redirected: ", this.state.redirected);
         // this.redirectIfSignedIn();
+        this.isSignedIn();
     }
 
-    async isSignedIn() {
-        //could use firebase.auth().onAuthStateChanged but it fires multiple times
-        let localToken = await AsyncStorage.getItem("token");
-        let localEmail = await AsyncStorage.getItem("email");
-        console.log('Local token: ', localToken);
-        console.log('Local email: ', localEmail);
-        console.log('Store user: ', this.props.user);
-
-        let storeToken = this.props.user.token;
-        let storeEmail = this.props.user.email;
-        try {
-            if (localToken !== null && localToken !== undefined && localEmail !== null && localEmail !== undefined) {
-                // if (email !== this.props.user.email) {
-                //     throw Error("Local email is outdated.");
-                // }
-                // if (token !== this.props.user.token) {
-                //     throw Error("Local token is outdated.");
-                // }
-                console.log("User already signed in");
-                const user = await firebase.auth().currentUser;
-                console.log("Current user: ", user);
-                this.props.saveUser(localEmail, localToken);
-                return true;
-            }
-            if (storeToken !== null && storeToken !== undefined && storeEmail !== null && storeEmail !== undefined) {
-                console.log("User recently signed in");
-                return true;
-            }
-            console.log("Token or email null");
-        } catch (error) {
-            console.log(error);
-            return false;
+    isSignedIn() {
+        console.log("Verify auth");
+        if(this.state.redirected === false) {
+            firebase.auth().onAuthStateChanged(
+                async (user) => {
+                    console.log("Verifying...")
+                    if (user) {
+                        console.log("Is auth... waiting for user data...");
+                        let uid = await user.uid;
+                        let email = await user.email;
+                        let token = await user.getIdToken();
+                        let name = await user.displayName;
+                        console.log("User auth ", name);
+    
+                        this.props.saveUser(email, token, uid, name);
+                        Actions.home();
+    
+                    } else {
+                        console.log("User not auth")
+                    }
+                })
+            this.setState({
+                redirected: true
+            })
         }
-
-        console.log("User not signed in");
-        return false;
     }
+
+    // async isSignedIn() {
+    //     //should delete this
+    //     //(fixed) could use firebase.auth().onAuthStateChanged but it fires multiple times
+    //     let localToken = await AsyncStorage.getItem("token");
+    //     let localEmail = await AsyncStorage.getItem("email");
+    //     console.log('Local token: ', localToken);
+    //     console.log('Local email: ', localEmail);
+    //     console.log('Store user: ', this.props.user);
+
+    //     let storeToken = this.props.user.token;
+    //     let storeEmail = this.props.user.email;
+    //     try {
+    //         if (localToken !== null && localToken !== undefined && localEmail !== null && localEmail !== undefined) {
+    //             // if (email !== this.props.user.email) {
+    //             //     throw Error("Local email is outdated.");
+    //             // }
+    //             // if (token !== this.props.user.token) {
+    //             //     throw Error("Local token is outdated.");
+    //             // }
+    //             console.log("User already signed in");
+    //             const user = await firebase.auth().currentUser;
+    //             console.log("Current user: ", user);
+    //             this.props.saveUser(localEmail, localToken);
+    //             return true;
+    //         }
+    //         if (storeToken !== null && storeToken !== undefined && storeEmail !== null && storeEmail !== undefined) {
+    //             console.log("User recently signed in");
+    //             return true;
+    //         }
+    //         console.log("Token or email null");
+    //     } catch (error) {
+    //         console.log(error);
+    //         return false;
+    //     }
+
+    //     console.log("User not signed in");
+    //     return false;
+    // }
 
     async saveUserLocal(email, token) {
         await AsyncStorage.setItem("email", email);
         await AsyncStorage.setItem("token", token);
     }
 
-    async redirectIfSignedIn() {
-        if (this.state.redirected === false) {
-            let authenticated = await this.isSignedIn()
-            if (authenticated === true) {
-                console.log("Story usery: ", this.props.user);
-                this.setState({ redirected: true });
-                Actions.home();
-            }
-        }
-    }
+    // async redirectIfSignedIn() {
+    //     if (this.state.redirected === false) {
+    //         let authenticated = await this.isSignedIn()
+    //         if (authenticated === true) {
+    //             console.log("Story usery: ", this.props.user);
+    //             this.setState({ redirected: true });
+    //             Actions.home();
+    //         }
+    //     }
+    // }
 
     signIn() {
         // Here make request to server to verify if user exists
