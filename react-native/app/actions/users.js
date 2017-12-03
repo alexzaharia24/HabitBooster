@@ -5,7 +5,7 @@ import {
     SIGN_OUT_STARTED, SIGN_OUT_SUCCESS, SIGN_OUT_FAIL
 } from './types'
 
-import * as firebase from 'firebase'
+import * as firebase from 'firebase';
 
 export const signInStarted = (email) => {
     return {
@@ -38,12 +38,13 @@ export const saveUserToken = (token) => {
     }
 };
 
-export const saveUser = (email, token, id) => {
+export const saveUser = (email, token, id, name) => {
     return {
         type: SAVE_USER,
         email: email,
         token: token,
-        id: id
+        id: id,
+        name: name
     }
 }
 
@@ -54,7 +55,8 @@ export const signIn = (email, password) => {
         dispatch(signInStarted(email));
         console.log("Email", email, " Pass: ", password);
 
-        return firebase.auth().signInWithEmailAndPassword(email, password)
+        return firebase.auth()
+            .signInWithEmailAndPassword(email, password)
             .then(async (response) => {
                 dispatch(signInSuccess());
                 console.log("R: ", response);
@@ -105,32 +107,21 @@ export const signUpFail = () => {
     }
 };
 
-export const signUp = (email, password) => {
+export const signUp = (email, password, name) => {
     //TODO: upgrade to firebase
+    console.log("Sign up action");
     return (dispatch) => {
         dispatch(signUpStarted());
-        return fetch("https://damp-refuge-96622.herokuapp.com/user", {
-            method: "POST",
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                user: {
-                    email: email,
-                    password: password,
-                },
-            })
-        })
-            .then((response) => {
-                if (response.status == 200) {
-                    dispatch(signUpSuccess(email));
-                    console.log("User created");
-                    return true;
-                } else {
-                    dispatch(signUpFail());
-                    return false
-                }
+        return firebase.auth()
+            .createUserWithEmailAndPassword(email, password)
+            .then((user) => {
+                console.log("New uid: ", user.uid);
+                user.updateProfile({
+                    displayName: name
+                })
+                    .then(() => {
+                        console.log("New user name: ", user.displayName);
+                    })
             })
             .catch((error) => {
                 return false;

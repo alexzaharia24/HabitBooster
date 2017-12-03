@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import {Text, View, StyleSheet, TextInput, TouchableHighlight} from "react-native";
-import {Linking} from 'react-native';
+import {Text, View, StyleSheet, TextInput, TouchableHighlight, Linking} from "react-native";
 import * as firebase from 'firebase'
+import {connect} from 'react-redux';
+import {signUp as signUpAction} from '../actions/users';
 
-export default class SignUp extends Component {
+class SignUp extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -13,12 +14,11 @@ export default class SignUp extends Component {
         }
     }
 
-    async _createUser() {
+    _createUser() {
         try {
-            await firebase.auth()
-                .createUserWithEmailAndPassword(this.state.email, this.state.password);
+            this.props.signUp(this.state.email, this.state.password, this.state.name)
 
-            console.log("User created: ", this.state.email);
+            // console.log("User created: ", this.state.email);
         } catch (error) {
             console.log(error);
         }
@@ -68,7 +68,7 @@ export default class SignUp extends Component {
                         title={"Create account"}
                         onPress={() => {
                             this._createUser()
-                            this._sendEmail()
+                            // this._sendEmail()
                         }}
                         style={styles.saveBtn}
                     >
@@ -88,3 +88,20 @@ const styles = StyleSheet.create({
         padding: 20,
     }
 });
+
+const mapStateToProps = (state) => {
+    return {}
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        signUp: (email, password, name) => {
+            return dispatch(signUpAction(email, password, name))
+        }
+    }
+};
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(SignUp);

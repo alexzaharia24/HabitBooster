@@ -20,9 +20,10 @@ class SignIn extends Component {
                     let uid = await user.uid;
                     let email = await user.email;
                     let token = await user.getIdToken();
-                    console.log("User auth ", uid);
+                    let name = await user.displayName;
+                    console.log("User auth ", name);
 
-                    this.props.saveUser(email, token, uid);
+                    this.props.saveUser(email, token, uid, name);
                     Actions.home();
 
                 } else {
@@ -240,8 +241,8 @@ const mapDispatchToProps = (dispatch) => {
         signIn: (email, password) => {
             return dispatch(signInAction(email, password))
         },
-        saveUser: (email, token, id) => {
-            return dispatch(saveUserAction(email, token, id))
+        saveUser: (email, token, id, name) => {
+            return dispatch(saveUserAction(email, token, id, name))
         }
     }
 };

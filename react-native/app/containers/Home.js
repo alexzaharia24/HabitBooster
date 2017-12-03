@@ -19,6 +19,7 @@ export class Home extends Component {
     render() {
         return (
             <View style={styles.mainView}>
+                <Text> Welcome, {this.props.user.name}! </Text>
                 <TouchableHighlight
                     title={"Sign out"}
                     style={styles.viewHabitsBtn}
