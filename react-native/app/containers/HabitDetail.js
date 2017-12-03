@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { editHabit as editHabitAction} from "../actions/habits";
 import moment from 'moment';
 import DateTimePicker from 'react-native-modal-datetime-picker';
-import * as firebase from 'firebase';
+import firebase from 'react-native-firebase';
 
 
 class HabitDetail extends Component {

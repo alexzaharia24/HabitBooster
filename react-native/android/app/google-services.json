@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "528488961419",
+    "firebase_url": "https://habitbooster-2f6e9.firebaseio.com",
+    "project_id": "habitbooster-2f6e9",
+    "storage_bucket": "habitbooster-2f6e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528488961419:android:187604a4ce27e534",
+        "android_client_info": {
+          "package_name": "com.habitbooster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528488961419-9sentk0pq14gi6i1vnbhu7l78mfoc5pf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5S9b3PQy53AW8GL1r2xmLP_BstU4inM8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

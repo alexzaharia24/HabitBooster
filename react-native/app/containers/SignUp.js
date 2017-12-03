@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, TextInput, TouchableHighlight, Linking} from "react-native";
-import * as firebase from 'firebase'
+import firebase from 'react-native-firebase'
 import {connect} from 'react-redux';
 import {signUp as signUpAction} from '../actions/users';
 

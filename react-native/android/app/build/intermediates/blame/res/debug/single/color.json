@@ -21,7 +21,7 @@
     },
     {
         "merged": "E:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "E:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.4.2\\res\\color\\common_google_signin_btn_text_light.xml"
+        "source": "E:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "E:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
@@ -29,7 +29,7 @@
     },
     {
         "merged": "E:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
-        "source": "E:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.4.2\\res\\color\\common_google_signin_btn_tint.xml"
+        "source": "E:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
         "merged": "E:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
@@ -41,7 +41,7 @@
     },
     {
         "merged": "E:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "E:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.4.2\\res\\color\\common_google_signin_btn_text_dark.xml"
+        "source": "E:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.6.0\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "E:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",

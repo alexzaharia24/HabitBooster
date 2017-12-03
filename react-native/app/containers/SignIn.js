@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Actions } from 'react-native-router-flux';
 import { Text, View, TouchableHighlight, StyleSheet, Image, TextInput, Alert, AsyncStorage } from 'react-native';
-import * as firebase from 'firebase'
+import firebase from 'react-native-firebase'
 import { connect } from 'react-redux';
 import { signIn as signInAction, saveUser as saveUserAction } from '../actions/users';
 

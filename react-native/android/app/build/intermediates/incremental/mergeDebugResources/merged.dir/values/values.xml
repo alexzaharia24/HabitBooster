@@ -269,7 +269,7 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
-    <integer name="google_play_services_version">11400000</integer>
+    <integer name="google_play_services_version">11717000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -328,6 +328,14 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="default_web_client_id" translatable="false">528488961419-9sentk0pq14gi6i1vnbhu7l78mfoc5pf.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://habitbooster-2f6e9.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">528488961419</string>
+    <string name="google_api_key" translatable="false">AIzaSyB5S9b3PQy53AW8GL1r2xmLP_BstU4inM8</string>
+    <string name="google_app_id" translatable="false">1:528488961419:android:187604a4ce27e534</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB5S9b3PQy53AW8GL1r2xmLP_BstU4inM8</string>
+    <string name="google_storage_bucket" translatable="false">habitbooster-2f6e9.appspot.com</string>
+    <string name="project_id" translatable="false">habitbooster-2f6e9</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

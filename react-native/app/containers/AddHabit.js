@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, TextInput, TouchableHighlight, StyleSheet, Alert } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { connect } from 'react-redux';
-import * as firebase from 'firebase';
+import firebase from 'react-native-firebase';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import moment from 'moment';
 
