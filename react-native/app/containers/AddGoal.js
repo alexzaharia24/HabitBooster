@@ -82,16 +82,18 @@ class AddGoal extends Component {
         //         console.log("Data: ", snapshot.val());
         //     })
 
+        const uid = this.props.user.id;
+        console.log("UID: ", uid);
 
         firebase.database()
-            .ref('goals')
+            .ref('accounts/' + uid + '/goals')
             .push({
                 title: this.state.title,
                 startDate: this.state.startDateTimestamp,
                 endDate: this.state.endDateTimestamp
             })
 
-        this.id++;
+        // this.id++;
     }
 
     render() {
@@ -181,7 +183,9 @@ const styles = StyleSheet.create({
 })
 
 const mapStateToProps = (state) => {
-    return {}
+    return {
+        user: state.user
+    }
 };
 
 const mapDispatchToProps = (dispatch) => {

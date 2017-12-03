@@ -12,12 +12,28 @@ class SignIn extends Component {
     }
 
     componentDidMount() {
-        this.redirectIfSignedIn();
+        // this.redirectIfSignedIn();
+
+        firebase.auth().onAuthStateChanged(
+            async (user) => {
+                if (user) {
+                    let uid = await user.uid;
+                    let email = await user.email;
+                    let token = await user.getIdToken();
+                    console.log("User auth ", uid);
+
+                    this.props.saveUser(email, token, uid);
+                    Actions.home();
+
+                } else {
+                    console.log("User not auth")
+                }
+            })
     }
 
     componentWillReceiveProps() {
-        console.log("Redirected: ", this.state.redirected);
-        this.redirectIfSignedIn();
+        // console.log("Redirected: ", this.state.redirected);
+        // this.redirectIfSignedIn();
     }
 
     async isSignedIn() {
@@ -39,6 +55,8 @@ class SignIn extends Component {
                 //     throw Error("Local token is outdated.");
                 // }
                 console.log("User already signed in");
+                const user = await firebase.auth().currentUser;
+                console.log("Current user: ", user);
                 this.props.saveUser(localEmail, localToken);
                 return true;
             }
@@ -222,8 +240,8 @@ const mapDispatchToProps = (dispatch) => {
         signIn: (email, password) => {
             return dispatch(signInAction(email, password))
         },
-        saveUser: (email, token) => {
-            return dispatch(saveUserAction(email, token))
+        saveUser: (email, token, id) => {
+            return dispatch(saveUserAction(email, token, id))
         }
     }
 };

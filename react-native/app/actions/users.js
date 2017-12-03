@@ -38,11 +38,12 @@ export const saveUserToken = (token) => {
     }
 };
 
-export const saveUser = (email, token) => {
+export const saveUser = (email, token, id) => {
     return {
         type: SAVE_USER,
         email: email,
         token: token,
+        id: id
     }
 }
 
@@ -105,6 +106,7 @@ export const signUpFail = () => {
 };
 
 export const signUp = (email, password) => {
+    //TODO: upgrade to firebase
     return (dispatch) => {
         dispatch(signUpStarted());
         return fetch("https://damp-refuge-96622.herokuapp.com/user", {
