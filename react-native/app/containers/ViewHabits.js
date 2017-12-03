@@ -3,17 +3,17 @@ import {Text, View, StyleSheet, FlatList, TouchableHighlight} from "react-native
 import {connect} from "react-redux";
 import {Actions} from "react-native-router-flux";
 
-class ViewGoals extends Component {
+class ViewHabits extends Component {
 
     _keyExtractor = (item, index) => item.id;
 
     _onSelectItem = (item) => {
         console.log(item);
         console.log("Clicked");
-        Actions.goalDetail({goal: item});
+        Actions.habitDetail({habit: item});
     };
 
-    _renderGoalItem = ({item}) => {
+    _renderHabitItem = ({item}) => {
         return (
             <TouchableHighlight
                 onPress={() => this._onSelectItem(item)}
@@ -24,15 +24,15 @@ class ViewGoals extends Component {
     };
 
     render() {
-        console.log("ViewGoals");
+        console.log("ViewHabits");
         console.log("Props: ", this.props);
         return (
             <View style={styles.mainView}>
-                <Text> View Goals scene </Text>
+                <Text> View Habits scene </Text>
                 <FlatList
-                    data={this.props.goals}
+                    data={this.props.habits}
                     keyExtractor={this._keyExtractor}
-                    renderItem={this._renderGoalItem}
+                    renderItem={this._renderHabitItem}
                 />
 
             </View>
@@ -42,7 +42,7 @@ class ViewGoals extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        goals: state.goals
+        habits: state.habits
     }
 };
 
@@ -55,4 +55,4 @@ const styles = StyleSheet.create({
 export default connect(
     mapStateToProps,
     {}
-)(ViewGoals);
+)(ViewHabits);

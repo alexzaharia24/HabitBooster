@@ -21,8 +21,8 @@ class MenuDrawer extends Component {
                     onPress={() => Actions.home()}
                 />
                 <Button
-                    title="Goals"
-                    onPress={() => Actions.viewGoals()}
+                    title="Habits"
+                    onPress={() => Actions.viewHabits()}
                 />
                 <Button
                     title="Sign out"

@@ -6,7 +6,7 @@ import * as firebase from 'firebase';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import moment from 'moment';
 
-class AddGoal extends Component {
+class AddHabit extends Component {
     constructor(props) {
         super(props);
         this.id = 2;
@@ -73,10 +73,10 @@ class AddGoal extends Component {
         return moment(date).unix();
     }
 
-    saveGoal() {
-        console.log("Save goal: ", this.state);
+    saveHabit() {
+        console.log("Save habit: ", this.state);
         // firebase.database()
-        //     .ref('goals')
+        //     .ref('habits')
         //     .once("value")
         //     .then((snapshot) => {
         //         console.log("Data: ", snapshot.val());
@@ -86,7 +86,7 @@ class AddGoal extends Component {
         console.log("UID: ", uid);
 
         firebase.database()
-            .ref('accounts/' + uid + '/goals')
+            .ref('accounts/' + uid + '/habits')
             .push({
                 title: this.state.title,
                 startDate: this.state.startDateTimestamp,
@@ -135,7 +135,7 @@ class AddGoal extends Component {
                 <TouchableHighlight
                     style={styles.saveButton}
                     onPress={() => {
-                        this.saveGoal()
+                        this.saveHabit()
                     }}
                 >
                     <Text style={{ color: '#fff', fontSize: 18 }}>
@@ -196,4 +196,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(AddGoal);
+)(AddHabit);

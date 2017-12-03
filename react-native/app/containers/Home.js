@@ -21,7 +21,7 @@ export class Home extends Component {
             <View style={styles.mainView}>
                 <TouchableHighlight
                     title={"Sign out"}
-                    style={styles.viewGoalsBtn}
+                    style={styles.viewHabitsBtn}
                     onPress={() => {
                         this.signOut()
                     }}
@@ -30,7 +30,7 @@ export class Home extends Component {
                 </TouchableHighlight>
                 <ActionButton
                     buttonColor="rgba(231,76,60,1)"
-                    onPress={() => { Actions.addGoal() }}
+                    onPress={() => { Actions.addHabit() }}
                 />
 
             </View>
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     mainView: {
         flex: 1,
     },
-    viewGoalsBtn: {
+    viewHabitsBtn: {
         flexDirection: 'row',
         justifyContent: 'center',
         backgroundColor: "skyblue",

@@ -3,21 +3,21 @@
  * https://github.com/facebook/react-native
  * @flow
  */
-
+``
 import React, { Component } from 'react';
 import { StyleSheet } from "react-native";
 import { Router, Scene, Stack, Drawer } from "react-native-router-flux";
 import Home from "./app/containers/Home";
-import ViewGoals from "./app/containers/ViewGoals";
+import ViewHabits from "./app/containers/ViewHabits";
 import SignUp from "./app/containers/SignUp";
 import { createStore } from 'redux';
 import { Reducer } from './app/reducers';
 import Provider from "react-redux/src/components/Provider";
-import GoalDetail from "./app/containers/GoalDetail";
+import HabitDetail from "./app/containers/HabitDetail";
 import SignIn from './app/containers/SignIn';
 import { store as appStore } from './app/store';
 import MenuDrawer from './app/containers/MenuDrawer';
-import AddGoal from './app/containers/AddGoal';
+import AddHabit from './app/containers/AddHabit';
 
 export default class App extends Component {
     render() {
@@ -44,9 +44,9 @@ export default class App extends Component {
                                 component={Home}
                             />
                             <Scene
-                                key="viewGoals"
-                                title="View Goals"
-                                component={ViewGoals}
+                                key="viewHabits"
+                                title="View Habits"
+                                component={ViewHabits}
                             />
                             <Scene
                                 key="signUp"
@@ -54,14 +54,14 @@ export default class App extends Component {
                                 component={SignUp}
                             />
                             <Scene
-                                key="goalDetail"
-                                title="Goal Detail"
-                                component={GoalDetail}
+                                key="habitDetail"
+                                title="Habit Detail"
+                                component={HabitDetail}
                             />
                             <Scene
-                                key="addGoal"
-                                title="Add Goal"
-                                component={AddGoal}
+                                key="addHabit"
+                                title="Add Habit"
+                                component={AddHabit}
                             />
                         </Drawer>
                     </Scene>

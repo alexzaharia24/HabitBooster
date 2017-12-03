@@ -2,7 +2,7 @@ import {EDIT_GOAL} from "../actions/index";
 import {users as usersReducer} from './users';
 
 const initialState = {
-    goals: [
+    habits: [
         {
             id: 1,
             title: 'No more sweets',
@@ -25,32 +25,32 @@ const initialState = {
     user: {}
 };
 
-function goals(state = [], action) {
+function habits(state = [], action) {
     switch(action.type) {
         case EDIT_GOAL:
-            return  updatedGoals(state, action);
+            return  updatedHabits(state, action);
             break;
         default:
             return state;
     }
 }
 
-function updatedGoals(state = [], action) {
-    return state.map((goal) => {
-        if (goal.id === action.id) {
-            return Object.assign({}, goal, {
+function updatedHabits(state = [], action) {
+    return state.map((habit) => {
+        if (habit.id === action.id) {
+            return Object.assign({}, habit, {
                 title: action.title,
                 startDate: action.startDate,
                 endDate: action.endDate
             })
         }
-        return goal;
+        return habit;
     });
 }
 
 export const reducer = (state = initialState, action) => {
     return {
-        goals: goals(state.goals, action),
+        habits: habits(state.habits, action),
         user: usersReducer(state.user, action)
     }
 };

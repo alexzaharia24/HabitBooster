@@ -72,7 +72,7 @@ export default class SignUp extends Component {
                         }}
                         style={styles.saveBtn}
                     >
-                        <Text> Save goal </Text>
+                        <Text> Save habit </Text>
                     </TouchableHighlight>
                 </View>
             </View>

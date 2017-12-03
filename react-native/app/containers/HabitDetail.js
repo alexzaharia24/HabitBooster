@@ -1,24 +1,24 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, FlatList, TouchableHighlight, TextInput} from "react-native";
 import {connect} from "react-redux";
-import {editGoal} from "../actions/index";
+import {editHabit} from "../actions/index";
 
-class GoalDetail extends Component {
+class HabitDetail extends Component {
     constructor(props) {
         super(props);
         console.log("Before mount: ", this.props);
-        console.log("Goal: ", this.props.goal);
+        console.log("Habit: ", this.props.habit);
         this.state = {
-            id: this.props.goal.id,
-            title: this.props.goal.title,
-            startDate: this.props.goal.startDate,
-            endDate: this.props.goal.endDate
+            id: this.props.habit.id,
+            title: this.props.habit.title,
+            startDate: this.props.habit.startDate,
+            endDate: this.props.habit.endDate
         }
     }
 
-    _updateGoal() {
+    _updateHabit() {
         console.log("Update: ", this.state.id);
-        this.props.updateGoal(
+        this.props.updateHabit(
             this.state.id,
             this.state.title,
             this.state.startDate,
@@ -69,11 +69,11 @@ class GoalDetail extends Component {
                 </View>
                 <View>
                     <TouchableHighlight
-                        title={"Save goal"}
-                        onPress={() => {this._updateGoal()}}
+                        title={"Save habit"}
+                        onPress={() => {this._updateHabit()}}
                         style={styles.saveBtn}
                     >
-                        <Text> Save goal </Text>
+                        <Text> Save habit </Text>
                     </TouchableHighlight>
                 </View>
             </View>
@@ -92,8 +92,8 @@ const styles = StyleSheet.create({
 
 const mapDispatchToProps = (dispatch) => {
   return {
-      updateGoal: (id, title, startDate, endDate) => {
-          dispatch(editGoal(id, title, startDate, endDate))
+      updateHabit: (id, title, startDate, endDate) => {
+          dispatch(editHabit(id, title, startDate, endDate))
       }
   }
 };
@@ -101,4 +101,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
     () => {return {}},
     mapDispatchToProps
-)(GoalDetail);
+)(HabitDetail);
