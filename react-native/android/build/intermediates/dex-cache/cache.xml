@@ -3,336 +3,309 @@
 
     <item
         is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.6.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="863b37c463df79f340b5d83bbbfc63ad25612e01">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-11.6.0_d7e58089cb70d88d1517c10e7a8b3af1ba9341ca.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.1\jars\libs\infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_5383a187bccfdaec78557a712d69a5efd6884816.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\11.6.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e4a9d8510de319af17459d3ec70e23559b83495b">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-11.6.0_a4bfb5033c5e3f9c42d2933355a76dc9f9889fb7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\HabitBooster\react-native-vector-icons\unspecified\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\HabitBooster-react-native-vector-icons-unspecified_6bfa5370d388f33d5a33c6038ba051576a4c84d4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.2.0_ea39a1864d71b10ab8ef6eb7f7cb27a0dde82cb2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.6.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1cde19cbf9be88547ab4b7f03668eac5d91bd611">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-11.6.0_0c45c8679eb7a9fe92a833f928e9ef4f41fea342.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.2.0_c739059adf39cae9580ba9277db5df57064cd49d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.6.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="da443aff9cd3c2cd75b957e0547e1ca2c4f30308">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-11.6.0_65f5b91265e5398d8adbc7b14a304971a258d92f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_f2dbdbee9666e48ccbefedb840b9b35db6957918.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Nicoleta\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_52dc8443e02229894a6c288a583d200df57bf00a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.2.0_0bcaaac7ab2f89567b74d5fe54225d595ba0c738.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_4d1062687df4207df28f859bef2a4e5adaabad4c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Nicoleta\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_73b1cfcc4bca7e4630600236f1e25c3b8764fec7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.6.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="729a6a1975c19d7461378172c7932f5c57f1c3fe">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-11.6.0_99e26945a95aff1762e26610c30a6835406dd6a6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Nicoleta\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_312f8b4ee14366f1313f023455ba0c99b6c06154.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_8b5be554ec030b516d459eab30aeb842e0aec755.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e9b8fd995f9c6c2caeb49827f0b52e0e8cc621e0">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-11.6.0_e39a210b2e3b4eda9cd12efbdf7170dcdc0ab483.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\11.6.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="47bcd0b3eac50dbe2f150987250a6507e10ef28a">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-11.6.0_27d9d9e9e305f691ef1239b82cc611649141bb63.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Nicoleta\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_0f6f9ef770759851666713322a48df0e533b5c06.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_0da975b6b32756bfb2063d33c0d644feeb4fd399.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.6.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="869a1d15fa9d8e8aa36587b042f553c1baea46bc">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-11.6.0_c450c0e29b1cb283d3ddcae2bb073bd300dae554.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.2.0_a889102cd3bdaf0bc0ffa6d5ec99a1b0af2c707e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Nicoleta\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_0db72b83fe133be211c16127010e776ddb277288.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_a863a0c898627e087b3739098a74553061beceec.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_7329a63e44ec8e5bf2e6d84871c8a623285b6361.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_40846045a8afdeb6a6741751b2f0c568e20e28bc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Nicoleta\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_21f69eb08e56682267abe030542cffd1b1781969.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d6399340139f67ce4faba06e97f256ef0d6817c0">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-11.6.0_7a0d574f32573f2c92426954464281da2ceccf3a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1a1444b104d20c6ecafc7af057a7df83f23bac4b">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.50.1_291ac0270256675e52e79b33da25bd63a4341ad1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_2ac3c154707458a8aeb2b41ce37cd06426ef7c25.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\11.6.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="cd1ff651ddb8608e9c4037f3d9ab475e9472abb2">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-11.6.0_789e3e3584558d4da077a342c22a314116ec01ca.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_61a1b53881cb80247235bb9f9b7f34df2d6cb6e2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.2.0_2418cd1f5e526e66443123305ee4491824c2fa85.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.2.0_881a1622342e09e875ab4fc081ce5757da58881d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Nicoleta\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_1ff0289477394fd19f2605c59f98437d2208b531.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_a65d018569dfaeb23bf77e44c20ab092df1e3e73.jar" />
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_141d193020b4a91e32743d95468e4d6529217596.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\HabitBooster\react-native-firebase\unspecified\jars\classes.jar"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="ebc13c7301fac27a890f7dd6fb9f05846de2e183">
-        <dex dex="E:\Alex\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\HabitBooster-react-native-firebase-unspecified_55838acdbb0b649663ac4e926dc3d032ec10211a.jar" />
+        sha1="1a1444b104d20c6ecafc7af057a7df83f23bac4b">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.50.1_409c2df35057b6bde8375f48b206303308d9e7b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.2.0_268c1a8d47e54e6f07b05df074bfc36c87314e59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d6399340139f67ce4faba06e97f256ef0d6817c0">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-11.6.0_43b97db86f8b2e0c1a5efebf506827024cd4d37d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.2.0_4d521a9e98ca238fe913ae50c8dfb6fed01c3427.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\android\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_eb253d2a7261446cadd05c8fa5e0c3722113e2de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.6.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1cde19cbf9be88547ab4b7f03668eac5d91bd611">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-11.6.0_952d3c845505de8b1ebac132c1d1b63912380ecd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_d189e0ee6377a93d310db3f123bf6fc89d8dc829.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.6.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="da443aff9cd3c2cd75b957e0547e1ca2c4f30308">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-11.6.0_3f6cd03d3672576a8cfa3e4947aced5f840c6467.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e9b8fd995f9c6c2caeb49827f0b52e0e8cc621e0">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-11.6.0_b5b90ee79727382b89c6fa3a2556681b0cfa950a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.1\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_d72dc83caadbf67fab616df6536b1fa01b3b846a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Alex\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_e58dd2a0e393f2185d64b5933d0462117ae26fba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.2.0_87eb6e3cdd4b1b292d29d97aa40fdb5249f84a4d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Alex\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_f4719c4b4bd9590f586084fba928540637780fd1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Alex\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_0be9e42bcff4d3e35886076a73514f9c47092e05.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_d367031dad81f59833dc29ba7c2da2dce771b7fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_6f5009dce83a1da1d33daf0cdc995fbafc5b50e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.6.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="863b37c463df79f340b5d83bbbfc63ad25612e01">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-11.6.0_5d290a05c86f66c65563a104b5f97311680411e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_5059d733bdd27ee3e3e2f0b927168bf33c1c347f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\HabitBooster\react-native-svg\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b2a4d678337faaa7cad8b298aa006274ba032cf4">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\HabitBooster-react-native-svg-unspecified_4daa5c9737f895c86e7353dac7ece530db1a85d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Alex\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_9968763fe1adc392ba928cb254fa0ae491ab62b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.2.0_9738bac64b67f9f38a457ce97a755f045326a593.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\HabitBooster\react-native-vector-icons\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="279750fed3c920d06351dbf32889c1b48203c7ad">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\HabitBooster-react-native-vector-icons-unspecified_fb45018327b9ee6c7e4a2af77015c6d9ad57ceba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.2.0_4e754a714a52d94a0196f77cbc08d3630a86d5fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_0ac2720beacb41fac67debdf3da41bca82c806b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Alex\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_c4b22bfaa259595f0dc10ab0a1f2d8ad70d2c036.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_390f2d02ec8e1c50de290ea14f485c9d70c098aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.2.0_331774bfcf1cdd532539fbe4f64c4dea78f8c570.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_a8b47111505d85e39c2659947e586047b647a83f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Alex\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_dddce83ab16fa098125133cfff8c6eed0b320ad0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Alex\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_e86c6ad046940b581fcf8f69e7965f8f5d1cfaf6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.6.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="869a1d15fa9d8e8aa36587b042f553c1baea46bc">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-11.6.0_07e3609a4f708499a10cf450f634b388172fd877.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.6.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="729a6a1975c19d7461378172c7932f5c57f1c3fe">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-11.6.0_b71bf408346b70aeadbac69c8f4080797eaf1a81.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="D:\mobile\HabitBooster\react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_23fa0b594eb8323697cc28b8a52329755b512e58.jar" />
     </item>
 
 </items>

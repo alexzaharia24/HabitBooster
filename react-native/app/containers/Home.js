@@ -1,35 +1,18 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, TouchableHighlight, Linking } from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity, Linking } from "react-native";
 import { Actions } from "react-native-router-flux";
-import firebase from 'react-native-firebase'
 import { connect } from 'react-redux';
 import { signOut as signOutAction } from '../actions/users';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
+import ViewHabits from "./ViewHabits";
 
 export class Home extends Component {
-
-    signOut() {
-        this.props.signOut()
-            .then(() => {
-                Actions.signIn();
-            })
-    }
-
     render() {
         console.log("home props: ", this.props);
         return (
             <View style={styles.mainView}>
-                <Text> Welcome, {this.props.user.name}! </Text>
-                <TouchableHighlight
-                    title={"Sign out"}
-                    style={styles.viewHabitsBtn}
-                    onPress={() => {
-                        this.signOut()
-                    }}
-                >
-                    <Text stlye={styles.text}> Sign out </Text>
-                </TouchableHighlight>
+                <ViewHabits/>
                 <ActionButton
                     buttonColor="rgba(231,76,60,1)"
                     onPress={() => { Actions.addHabit() }}

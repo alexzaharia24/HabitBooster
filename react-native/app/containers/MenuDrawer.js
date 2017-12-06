@@ -21,12 +21,12 @@ class MenuDrawer extends Component {
                     onPress={() => Actions.home()}
                 />
                 <Button
-                    title="Habits"
-                    onPress={() => Actions.viewHabits()}
+                    title="Completed habits"
+                    onPress={() => Actions.completedHabits()}
                 />
                 <Button
-                    title="Sign out"
-                    onPress={() => this.signOut()}
+                    title="Stats"
+                    onPress={() => Actions.stats()}
                 />
             </View>
         )

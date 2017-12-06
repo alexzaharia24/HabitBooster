@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
-import { Text, View, StyleSheet, FlatList, TouchableHighlight, TextInput, Alert } from "react-native";
-import { connect } from "react-redux";
-import { editHabit as editHabitAction} from "../actions/habits";
+import React, {Component} from 'react';
+import {Text, View, StyleSheet, FlatList, TouchableOpacity, TextInput, Alert, AsyncStorage} from "react-native";
+import {connect} from "react-redux";
+import {editHabit as editHabitAction} from "../actions/habits";
 import moment from 'moment';
 import DateTimePicker from 'react-native-modal-datetime-picker';
-import firebase from 'react-native-firebase';
+import {Actions} from 'react-native-router-flux';
+////import firebase from 'react-native-firebase';
 
 
 class HabitDetail extends Component {
@@ -12,10 +13,11 @@ class HabitDetail extends Component {
         super(props);
         console.log("Habit: ", this.props.habit);
         this.state = {
-            id: this.props.habit.id,
+            oldTitle: this.props.habit.title,
             title: this.props.habit.title,
-            startDate: this.parseFromUnixTimestamp(this.props.habit.startDate),
-            endDate: this.parseFromUnixTimestamp(this.props.habit.endDate),
+            category: this.props.habit.category,
+            startDate: this.parseHumanDate(this.props.habit.startDate),
+            endDate: this.parseHumanDate(this.props.habit.endDate),
             startDateTimestamp: this.props.habit.startDate,
             endDateTimestamp: this.props.habit.endDate,
             isStartDatePickerVisible: false,
@@ -25,28 +27,112 @@ class HabitDetail extends Component {
         //TODO: open datepicker at the current startdate and enddate not the current real date
     }
 
-    updateHabit() {
-        console.log("Update: ", this.state.id);
-        let uid = this.props.user.id;
-        let item = {
-            id: this.state.id,
+    async updateHabit() {
+        console.log("Update: ", this.state.title);
+        let habit = {
             title: this.state.title,
+            category: this.state.category,
             startDate: this.state.startDateTimestamp,
             endDate: this.state.endDateTimestamp
+        };
+
+        let habits = await AsyncStorage.getItem("habits");
+        habits = JSON.parse(habits);
+        if (habits === null | habits === undefined) {
+            habits = [];
         }
-        this.props.updateHabit(uid, item)
+
+        let index = habits.findIndex((h) => {
+            return h.title === this.state.oldTitle
+        });
+        console.log("index: ", index);
+        if (index !== -1) {
+            // habit exits
+            habits[index] = habit;
+            console.log("New habits: ", habits);
+            AsyncStorage.setItem("habits", JSON.stringify(habits));
+            Alert.alert("Yeei", "Habit updated.");
+            Actions.home();
+        }
+        else {
+            Alert.alert("Ooops", "Cannot update habit. Habit not found.");
+        }
     }
 
-    deleteHabit() {
-        //Integrate into redux flow
-        let uid = this.props.user.id;
-        console.log("Delete: ", this.state.id, 'of user: ', uid);
-        firebase.database()
-            .ref('/accounts/' + uid + '/habits/' + this.state.id)
-            .remove()
-            .then(() => {
-                console.log("Habit: ", this.state.id, " removed");
-            })
+    async deleteHabit() {
+        //TODO: Integrate into redux flow
+        console.log("Delete habit: ", this.state);
+
+        let habit = this.props.habit;
+        let habits = await AsyncStorage.getItem("habits");
+        habits = JSON.parse(habits);
+        if (habits === null || habits === undefined) {
+            habits = [];
+        }
+
+        let index = habits.findIndex((h) => {
+            return h.title === habit.title
+        });
+
+        if (index !== -1) {
+            // habit exits
+            habits.splice(index, 1);
+            console.log("Remaining habits: ", habits);
+            AsyncStorage.setItem("habits", JSON.stringify(habits));
+            Alert.alert("Yeei", "Habit deleted.");
+            Actions.home();
+        }
+        else {
+            Alert.alert("Ooops", "Cannot delete habit. Habit not found.");
+        }
+    }
+
+    async completeHabit() {
+        //TODO: Integrate into redux flow
+        console.log("Delete habit: ", this.state);
+
+        let habit = this.props.habit;
+        let habits = await AsyncStorage.getItem("habits");
+        let habits_completed = await AsyncStorage.getItem("habits_completed");
+        habits = JSON.parse(habits);
+        habits_completed = JSON.parse(habits_completed);
+        if (habits === null || habits === undefined) {
+            habits = [];
+        }
+        if (habits_completed === null || habits_completed === undefined) {
+            habits_completed = [];
+        }
+
+
+        let index_habit = habits.findIndex((h) => {
+            return h.title === habit.title
+        });
+
+        let index_habit_completed = habits_completed.findIndex((h) => {
+            return h.title === habit.title
+        });
+
+        if (index_habit !== -1) {
+            // habit exits
+            habits.splice(index_habit, 1);
+            console.log("Remaining habits: ", habits);
+            AsyncStorage.setItem("habits", JSON.stringify(habits));
+
+            if (index_habit_completed === -1) {
+                // habit not completed yet
+                habits_completed.push(habit);
+                AsyncStorage.setItem("habits_completed", JSON.stringify(habits_completed));
+                Alert.alert("Yeei", "Habit completed.");
+                Actions.home();
+            }
+            else {
+                Alert.alert("Ooops", "Cannot complete habit. Habit already completed..");
+            }
+        }
+        else {
+            Alert.alert("Ooops", "Cannot complete habit. Habit not found.");
+        }
+
     }
 
     showStartDatePicker = () => {
@@ -54,20 +140,20 @@ class HabitDetail extends Component {
         this.setState({
             isStartDatePickerVisible: true
         })
-    }
+    };
 
     showEndDatePicker = () => {
         this.setState({
             isEndDatePickerVisible: true
         })
-    }
+    };
 
     hideDateTimePicker = () => {
         this.setState({
             isStartDatePickerVisible: false,
             isEndDatePickerVisible: false,
         })
-    }
+    };
 
     confirmStartDatePicker = (date) => {
         console.log("S date: ", date);
@@ -76,14 +162,14 @@ class HabitDetail extends Component {
         this.setState({
             startDate: this.parseHumanDate(date),
             startDateTimestamp: this.parseTimestampDate(date)
-        })
+        });
         this.hideDateTimePicker();
-    }
+    };
 
     confirmEndDatePicker = (date) => {
         let timpestamp = this.parseTimestampDate(date);
         if (timpestamp < this.state.startDateTimestamp) {
-            Alert.alert("End date must be < Start date");
+            Alert.alert("Start date must be < End date");
         } else {
             this.setState({
                 endDate: this.parseHumanDate(date),
@@ -91,17 +177,17 @@ class HabitDetail extends Component {
             })
         }
         this.hideDateTimePicker();
-    }
+    };
 
     parseHumanDate = (date) => {
         return moment(date).format("DD/MM/YYYY");
-    }
+    };
     parseTimestampDate = (date) => {
-        return moment(date).unix();
-    }
+        return moment(date).valueOf();
+    };
     parseFromUnixTimestamp = (date) => {
         return moment.unix(date).format("DD/MM/YYYY");
-    }
+    };
 
     render() {
         return (
@@ -111,7 +197,16 @@ class HabitDetail extends Component {
                     placeholderTextColor={'#b6b6b4'}
                     defaultValue={this.state.title}
                     onChangeText={(text) => {
-                        this.setState({ title: text });
+                        this.setState({title: text});
+                    }}
+                    style={styles.inputText}
+                />
+                <TextInput
+                    placeholder={"Category"}
+                    placeholderTextColor={'#b6b6b4'}
+                    defaultValue={this.state.category}
+                    onChangeText={(text) => {
+                        this.setState({category: text});
                     }}
                     style={styles.inputText}
                 />
@@ -123,7 +218,7 @@ class HabitDetail extends Component {
                         this.showStartDatePicker()
                     }}
                     onChangeText={(text) => {
-                        this.setState({ startDate: text });
+                        this.setState({startDate: text});
                     }}
                     style={styles.inputText}
                 />
@@ -135,30 +230,40 @@ class HabitDetail extends Component {
                         this.showEndDatePicker()
                     }}
                     onChangeText={(text) => {
-                        this.setState({ endDate: text });
+                        this.setState({endDate: text});
                     }}
                     style={styles.inputText}
                 />
-                <TouchableHighlight
+                <TouchableOpacity
                     style={styles.saveButton}
                     onPress={() => {
                         this.updateHabit()
                     }}
                 >
-                    <Text style={{ color: '#fff', fontSize: 18 }}>
+                    <Text style={{color: '#fff', fontSize: 18}}>
                         Save
-                        </Text>
-                </TouchableHighlight>
-                <TouchableHighlight
+                    </Text>
+                </TouchableOpacity>
+                <TouchableOpacity
                     style={styles.deleteButton}
                     onPress={() => {
                         this.deleteHabit()
                     }}
                 >
-                    <Text style={{ color: '#fff', fontSize: 18 }}>
+                    <Text style={{color: '#fff', fontSize: 18}}>
                         Delete
-                        </Text>
-                </TouchableHighlight>
+                    </Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.completeButton}
+                    onPress={() => {
+                        this.completeHabit()
+                    }}
+                >
+                    <Text style={{color: '#fff', fontSize: 18}}>
+                        Complete
+                    </Text>
+                </TouchableOpacity>
                 <DateTimePicker
                     isVisible={this.state.isStartDatePickerVisible}
                     onConfirm={this.confirmStartDatePicker}
@@ -206,13 +311,22 @@ const styles = StyleSheet.create({
         paddingTop: 14,
         paddingBottom: 14,
     },
-})
+    completeButton: {
+        width: '78%',
+        backgroundColor: '#41A317',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 20,
+        paddingTop: 14,
+        paddingBottom: 14,
+    },
+});
 
 const mapStateToProps = (state) => {
     return {
         user: state.user
     }
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
     return {

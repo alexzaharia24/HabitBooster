@@ -3,7 +3,7 @@ import {
     EDIT_HABIT_STARTED, EDIT_HABIT_SUCCESS, EDIT_HABIT_FAIL
 } from './types'
 
-import firebase from 'react-native-firebase';
+//import firebase from 'react-native-firebase';
 
 export const fetchHabitsStarted = (uid) => {
     return {

@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
-import { View, Text, TextInput, TouchableHighlight, StyleSheet, Alert } from 'react-native';
-import { Actions } from 'react-native-router-flux';
-import { connect } from 'react-redux';
-import firebase from 'react-native-firebase';
+import React, {Component} from 'react';
+import {View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, AsyncStorage, Picker} from 'react-native';
+import {Actions} from 'react-native-router-flux';
+import {connect} from 'react-redux';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import moment from 'moment';
 
 class AddHabit extends Component {
     constructor(props) {
         super(props);
-        this.id = 2;
         this.state = {
             id: this.id,
             title: "",
+            category: "",
             startDate: null,
             endDate: null,
             startDateTimestamp: 0,
@@ -27,20 +26,20 @@ class AddHabit extends Component {
         this.setState({
             isStartDatePickerVisible: true
         })
-    }
+    };
 
     showEndDatePicker = () => {
         this.setState({
             isEndDatePickerVisible: true
         })
-    }
+    };
 
     hideDateTimePicker = () => {
         this.setState({
             isStartDatePickerVisible: false,
             isEndDatePickerVisible: false,
         })
-    }
+    };
 
     confirmStartDatePicker = (date) => {
         console.log("S date: ", date);
@@ -49,14 +48,14 @@ class AddHabit extends Component {
         this.setState({
             startDate: this.parseHumanDate(date),
             startDateTimestamp: this.parseTimestampDate(date)
-        })
+        });
         this.hideDateTimePicker();
-    }
+    };
 
     confirmEndDatePicker = (date) => {
         let timpestamp = this.parseTimestampDate(date);
         if (timpestamp < this.state.startDateTimestamp) {
-            Alert.alert("End date must be < Start date");
+            Alert.alert("Start date must be < End date");
         } else {
             this.setState({
                 endDate: this.parseHumanDate(date),
@@ -64,36 +63,43 @@ class AddHabit extends Component {
             })
         }
         this.hideDateTimePicker();
-    }
+    };
 
     parseHumanDate = (date) => {
         return moment(date).format("DD/MM/YYYY");
-    }
+    };
     parseTimestampDate = (date) => {
-        return moment(date).unix();
-    }
+        return moment(date).valueOf();
+    };
 
-    saveHabit() {
+    async saveHabit() {
         console.log("Save habit: ", this.state);
-        // firebase.database()
-        //     .ref('habits')
-        //     .once("value")
-        //     .then((snapshot) => {
-        //         console.log("Data: ", snapshot.val());
-        //     })
 
-        const uid = this.props.user.id;
-        console.log("UID: ", uid);
+        let habit = {
+            title: this.state.title,
+            category: this.state.category,
+            startDate: this.state.startDateTimestamp,
+            endDate: this.state.endDateTimestamp
+        };
 
-        firebase.database()
-            .ref('accounts/' + uid + '/habits')
-            .push({
-                title: this.state.title,
-                startDate: this.state.startDateTimestamp,
-                endDate: this.state.endDateTimestamp
-            })
+        let habits = await AsyncStorage.getItem("habits");
+        habits = JSON.parse(habits);
+        if (habits === null) {
+            habits = [];
+        }
 
-        // this.id++;
+        if (habits.findIndex((h) => {
+                return h.title === habit.title
+            }) === -1) {
+            // habit does not already exist
+            habits.push(habit);
+            AsyncStorage.setItem("habits", JSON.stringify(habits));
+            Alert.alert("Yeei", "Habit added.");
+            Actions.home();
+        }
+        else {
+            Alert.alert("Ooops", "Habit with same title already exits");
+        }
     }
 
     render() {
@@ -104,7 +110,16 @@ class AddHabit extends Component {
                     placeholderTextColor={'#b6b6b4'}
                     defaultValue={this.state.title}
                     onChangeText={(text) => {
-                        this.setState({ title: text });
+                        this.setState({title: text});
+                    }}
+                    style={styles.inputText}
+                />
+                <TextInput
+                    placeholder={"Category"}
+                    placeholderTextColor={'#b6b6b4'}
+                    defaultValue={this.state.category}
+                    onChangeText={(text) => {
+                        this.setState({category: text});
                     }}
                     style={styles.inputText}
                 />
@@ -116,7 +131,7 @@ class AddHabit extends Component {
                         this.showStartDatePicker()
                     }}
                     onChangeText={(text) => {
-                        this.setState({ startDate: text });
+                        this.setState({startDate: text});
                     }}
                     style={styles.inputText}
                 />
@@ -128,20 +143,21 @@ class AddHabit extends Component {
                         this.showEndDatePicker()
                     }}
                     onChangeText={(text) => {
-                        this.setState({ endDate: text });
+                        this.setState({endDate: text});
                     }}
                     style={styles.inputText}
                 />
-                <TouchableHighlight
+
+                <TouchableOpacity
                     style={styles.saveButton}
                     onPress={() => {
                         this.saveHabit()
                     }}
                 >
-                    <Text style={{ color: '#fff', fontSize: 18 }}>
+                    <Text style={{color: '#fff', fontSize: 18}}>
                         Save
-                        </Text>
-                </TouchableHighlight>
+                    </Text>
+                </TouchableOpacity>
                 <DateTimePicker
                     isVisible={this.state.isStartDatePickerVisible}
                     onConfirm={this.confirmStartDatePicker}
@@ -180,7 +196,7 @@ const styles = StyleSheet.create({
         paddingTop: 14,
         paddingBottom: 14,
     },
-})
+});
 
 const mapStateToProps = (state) => {
     return {
@@ -189,8 +205,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-    return {
-    }
+    return {}
 };
 
 export default connect(

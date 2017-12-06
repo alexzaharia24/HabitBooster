@@ -1,4 +1,4 @@
-#Sun Dec 03 20:40:15 EET 2017
-base.0=E\:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Sun Dec 17 23:28:41 EET 2017
+base.0=D\:\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.0=E\:\\Alex\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.0=D\:\\mobile\\HabitBooster\\react-native\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

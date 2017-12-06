@@ -5,7 +5,7 @@ import {
     SIGN_OUT_STARTED, SIGN_OUT_SUCCESS, SIGN_OUT_FAIL
 } from './types'
 
-import firebase from 'react-native-firebase';
+//import firebase from 'react-native-firebase';
 
 export const signInStarted = (email) => {
     return {
