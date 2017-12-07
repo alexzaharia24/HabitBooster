@@ -12,9 +12,51 @@
         android:id="@+id/signUpBtn"
         android:layout_width="210dp"
         android:layout_height="50dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="84dp"
+        android:onClick="goToAddGoal"
+        android:text="Add goal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewGoalsBtn"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="146dp"
         android:onClick="goToSignUp"
         android:text="Sign Up"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewGoalsBtn"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="210dp"
+        android:onClick="goToStats"
+        android:text="Stats"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewGoalsBtn"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
+        android:onClick="goToCompletedGoals"
+        android:text="Completed goals"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewGoalsBtn"

@@ -6,22 +6,39 @@
     android:layout_height="match_parent"
     tools:context="com.app.alex.testapp.GoalDetailsActivity">
 
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="158dp"
+        android:onClick="deleteGoal"
+        android:text="Delete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputGoalEnd"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
     <EditText
         android:id="@+id/inputGoalEnd"
         android:layout_width="0dp"
         android:layout_height="44dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="198dp"
+        android:editable="false"
         android:ems="10"
         android:hint="End date"
         android:inputType="textPersonName"
+        android:onClick="setEndDate"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginStart="31dp"
-        android:layout_marginEnd="31dp"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintHorizontal_bias="1.0" />
+        tools:layout_constraintRight_creator="1" />
 
     <EditText
         android:id="@+id/inputGoalTitle"
@@ -41,16 +58,33 @@
         app:layout_constraintHorizontal_bias="1.0" />
 
     <EditText
+        android:id="@+id/inputGoalCategory"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:hint="Category"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
         android:id="@+id/inputGoalStart"
         android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginEnd="31dp"
         android:layout_marginStart="31dp"
-        android:layout_marginTop="122dp"
+        android:layout_marginTop="154dp"
+        android:editable="false"
         android:ems="10"
         android:hint="Start date"
         android:inputType="textPersonName"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:onClick="setStartDate"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -80,10 +114,25 @@
         android:layout_height="52dp"
         android:layout_marginEnd="30dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="26dp"
         android:onClick="saveGoal"
         android:text="Save"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputGoalEnd"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="91dp"
+        android:onClick="completeGoal"
+        android:text="Complete"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputGoalEnd"
