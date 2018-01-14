@@ -13,7 +13,13 @@ import MenuDrawer from './app/containers/MenuDrawer';
 import AddHabit from './app/containers/AddHabit';
 import CompletedHabits from "./app/containers/CompletedHabits";
 import Stats from "./app/containers/Stats";
+import firebase from 'react-native-firebase';
 
+
+firebase.auth().signInAnonymously()
+    .then((user) => {
+        console.log(user.isAnonymous);
+    });
 
 export default class App extends Component {
 

@@ -1,6 +1,49 @@
 -- Merging decision tree log ---
 manifest
 ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12
+MERGED from [:react-native-vector-icons] D:\mobile\HabitBooster\react-native\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-svg] D:\mobile\HabitBooster\react-native\node_modules\react-native-svg\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.50.1] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\react-native-0.50.1.aar\84123bab05fe0714d3ae91dff91d0d47\AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\5401b79eba3486a34c33060ebcc775da\AndroidManifest.xml:17:1-24:12
+MERGED from [:react-native-firebase] D:\mobile\HabitBooster\react-native\node_modules\react-native-firebase\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-auth:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.0.aar\8eba759bcb0442c4d1f3c141872f3b7f\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.0.aar\84abc29ab6ee5f4e553ae8cf02cdbac6\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\d7845ca1fb298e29c09fcb0611d90b8a\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:16:1-35:12
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:16:1-29:12
+MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:16:1-47:12
+MERGED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.0.aar\a10b3aa41dbafc668f1c0a6584c7d747\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tasks:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.6.0.aar\ead88570cf6fcb49d7f1a4d3d4ea4289\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.0.aar\a4c3085803c5b1bcb5d790df2250d1bc\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\862a3c83b7ea405b6000d7ecbf454ba8\AndroidManifest.xml:17:1-27:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\de3a2fc5e0e3ae500dad5d705aea7247\AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\f5e284e6d6a35fde6b254916c839ce42\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\24d0feabd3247d9e8fbaee10d2cca6be\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\b9ea13e52747d979850e1b7970b552c4\AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\389deec3b5927b1ec7452b4e31ceb6a4\AndroidManifest.xml:1:1-3:12
+MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.0.aar\5f2fbcb0ebbd1293632580563e3e904c\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.0.aar\8153a210ae3b2ba63498e7b0977894f3\AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\833ca9698769fd9073a01c0e07b8d16f\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\139ae72cdba13a09214b7054de6fe8b8\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\e55f1c134fee2ff3891b56488a70ef88\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\611ed8ed56f86c701870d5031d123528\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\e5f5a17ef50803e7e368a9a871c26cc2\AndroidManifest.xml:17:1-27:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\cebe665e5df9d0ce85616e5a1e6a1233\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\a0b47728d699683f22f21cf5c49463db\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\4e66f1962742b735354e0632c15ddf56\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\e59b10618d61cc7506ed8b742b5af032\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.0.aar\f727e97a1ceb1eeb3c366a7d9d441caf\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.0.aar\4db068915021ead1da39bb631e481599\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.0.aar\c0b3a76dde1aa5b66fe86f0d538b7119\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.0.aar\ad9201fd3fd9b1ea4452f738b07c0d48\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.0.aar\2ac2f8c8b762e78905ad94d323f59067\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\2f4529e7e6806523b7a5534a853d9a44\AndroidManifest.xml:2:1-6:12
+INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12
 	package
 		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:2:5-31
 		INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml
@@ -9,61 +52,110 @@ ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManif
 		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:4:5-30
 		INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:11-69
 	android:versionCode
 		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:3:5-28
 		INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:6:5-67
-MERGED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.6.0\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:20:5-66
+MERGED from [:react-native-firebase] D:\mobile\HabitBooster\react-native\node_modules\react-native-firebase\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase] D:\mobile\HabitBooster\react-native\node_modules\react-native-firebase\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:7:5-77
-MERGED from [com.facebook.react:react-native:0.50.1] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.1\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.50.1] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\react-native-0.50.1.aar\84123bab05fe0714d3ae91dff91d0d47\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.50.1] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\react-native-0.50.1.aar\84123bab05fe0714d3ae91dff91d0d47\AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:7:22-75
 uses-sdk
 ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:9:5-11:41
-MERGED from [HabitBooster:react-native-vector-icons:unspecified] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\HabitBooster\react-native-vector-icons\unspecified\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services-base:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.6.0\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base-license\11.6.0\AndroidManifest.xml:4:5-43
-MERGED from [HabitBooster:react-native-svg:unspecified] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\HabitBooster\react-native-svg\unspecified\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.50.1] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.0.1] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:20:5-43
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\AndroidManifest.xml:2:3-70
-MERGED from [com.google.firebase:firebase-core:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-core\11.6.0\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.6.0\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-iid-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid-license\11.6.0\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-common:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.6.0\AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-common-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common-license\11.6.0\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.6.0\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.6.0\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\AndroidManifest.xml:21:5-23:58
-MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement-license\11.6.0\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks-license\11.6.0\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl-license\11.6.0\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-license\11.6.0\AndroidManifest.xml:4:5-43
+INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:9:5-11:41
+INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:9:5-11:41
+MERGED from [:react-native-vector-icons] D:\mobile\HabitBooster\react-native\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] D:\mobile\HabitBooster\react-native\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] D:\mobile\HabitBooster\react-native\node_modules\react-native-svg\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] D:\mobile\HabitBooster\react-native\node_modules\react-native-svg\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.50.1] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\react-native-0.50.1.aar\84123bab05fe0714d3ae91dff91d0d47\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.50.1] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\react-native-0.50.1.aar\84123bab05fe0714d3ae91dff91d0d47\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\5401b79eba3486a34c33060ebcc775da\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\5401b79eba3486a34c33060ebcc775da\AndroidManifest.xml:20:5-43
+MERGED from [:react-native-firebase] D:\mobile\HabitBooster\react-native\node_modules\react-native-firebase\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase] D:\mobile\HabitBooster\react-native\node_modules\react-native-firebase\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-auth:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.0.aar\8eba759bcb0442c4d1f3c141872f3b7f\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.0.aar\8eba759bcb0442c4d1f3c141872f3b7f\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.0.aar\84abc29ab6ee5f4e553ae8cf02cdbac6\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.0.aar\84abc29ab6ee5f4e553ae8cf02cdbac6\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\d7845ca1fb298e29c09fcb0611d90b8a\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\d7845ca1fb298e29c09fcb0611d90b8a\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.0.aar\a10b3aa41dbafc668f1c0a6584c7d747\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.0.aar\a10b3aa41dbafc668f1c0a6584c7d747\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.6.0.aar\ead88570cf6fcb49d7f1a4d3d4ea4289\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.6.0.aar\ead88570cf6fcb49d7f1a4d3d4ea4289\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.0.aar\a4c3085803c5b1bcb5d790df2250d1bc\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.0.aar\a4c3085803c5b1bcb5d790df2250d1bc\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\862a3c83b7ea405b6000d7ecbf454ba8\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\862a3c83b7ea405b6000d7ecbf454ba8\AndroidManifest.xml:21:5-23:54
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\de3a2fc5e0e3ae500dad5d705aea7247\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\de3a2fc5e0e3ae500dad5d705aea7247\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\f5e284e6d6a35fde6b254916c839ce42\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\f5e284e6d6a35fde6b254916c839ce42\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\24d0feabd3247d9e8fbaee10d2cca6be\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\24d0feabd3247d9e8fbaee10d2cca6be\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\b9ea13e52747d979850e1b7970b552c4\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\b9ea13e52747d979850e1b7970b552c4\AndroidManifest.xml:2:3-70
+MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.0.aar\5f2fbcb0ebbd1293632580563e3e904c\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.0.aar\5f2fbcb0ebbd1293632580563e3e904c\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.0.aar\8153a210ae3b2ba63498e7b0977894f3\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.0.aar\8153a210ae3b2ba63498e7b0977894f3\AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\833ca9698769fd9073a01c0e07b8d16f\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\833ca9698769fd9073a01c0e07b8d16f\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\139ae72cdba13a09214b7054de6fe8b8\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\139ae72cdba13a09214b7054de6fe8b8\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\e55f1c134fee2ff3891b56488a70ef88\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\e55f1c134fee2ff3891b56488a70ef88\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\611ed8ed56f86c701870d5031d123528\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\611ed8ed56f86c701870d5031d123528\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\e5f5a17ef50803e7e368a9a871c26cc2\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\e5f5a17ef50803e7e368a9a871c26cc2\AndroidManifest.xml:21:5-23:58
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\cebe665e5df9d0ce85616e5a1e6a1233\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\cebe665e5df9d0ce85616e5a1e6a1233\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\a0b47728d699683f22f21cf5c49463db\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\a0b47728d699683f22f21cf5c49463db\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\4e66f1962742b735354e0632c15ddf56\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\4e66f1962742b735354e0632c15ddf56\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\e59b10618d61cc7506ed8b742b5af032\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\e59b10618d61cc7506ed8b742b5af032\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.0.aar\f727e97a1ceb1eeb3c366a7d9d441caf\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.0.aar\f727e97a1ceb1eeb3c366a7d9d441caf\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.0.aar\4db068915021ead1da39bb631e481599\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.0.aar\4db068915021ead1da39bb631e481599\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.0.aar\c0b3a76dde1aa5b66fe86f0d538b7119\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.0.aar\c0b3a76dde1aa5b66fe86f0d538b7119\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.0.aar\ad9201fd3fd9b1ea4452f738b07c0d48\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.0.aar\ad9201fd3fd9b1ea4452f738b07c0d48\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.0.aar\2ac2f8c8b762e78905ad94d323f59067\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.0.aar\2ac2f8c8b762e78905ad94d323f59067\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\2f4529e7e6806523b7a5534a853d9a44\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\2f4529e7e6806523b7a5534a853d9a44\AndroidManifest.xml:4:5-43
+INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:9:5-11:41
+INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:9:5-11:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:support-v4:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\862a3c83b7ea405b6000d7ecbf454ba8\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:11:9-38
 		INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml
@@ -74,37 +166,66 @@ MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] D:\mobile\Ha
 		INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml
 application
 ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:13:5-30:19
-MERGED from [com.google.android.gms:play-services-base:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.6.0\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-base-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base-license\11.6.0\AndroidManifest.xml:5:5-20
-MERGED from [com.facebook.react:react-native:0.50.1] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.1\AndroidManifest.xml:13:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.soloader:soloader:0.1.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\org.webkit\android-jsc\r174650\AndroidManifest.xml:2:3-17
-MERGED from [com.google.firebase:firebase-core:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-core\11.6.0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:24:5-34:19
-MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.6.0\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:29:5-46:19
-MERGED from [com.google.firebase:firebase-iid-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid-license\11.6.0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-common:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.6.0\AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.firebase:firebase-common-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common-license\11.6.0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.6.0\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.6.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\AndroidManifest.xml:25:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement-license\11.6.0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks-license\11.6.0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl-license\11.6.0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-license\11.6.0\AndroidManifest.xml:5:5-20
+MERGED from [com.facebook.react:react-native:0.50.1] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\react-native-0.50.1.aar\84123bab05fe0714d3ae91dff91d0d47\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.50.1] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\react-native-0.50.1.aar\84123bab05fe0714d3ae91dff91d0d47\AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\5401b79eba3486a34c33060ebcc775da\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\5401b79eba3486a34c33060ebcc775da\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-auth:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.0.aar\8eba759bcb0442c4d1f3c141872f3b7f\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-auth:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.0.aar\8eba759bcb0442c4d1f3c141872f3b7f\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.0.aar\84abc29ab6ee5f4e553ae8cf02cdbac6\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.0.aar\84abc29ab6ee5f4e553ae8cf02cdbac6\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\d7845ca1fb298e29c09fcb0611d90b8a\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\d7845ca1fb298e29c09fcb0611d90b8a\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:29:5-46:19
+MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:29:5-46:19
+MERGED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.0.aar\a10b3aa41dbafc668f1c0a6584c7d747\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.0.aar\a10b3aa41dbafc668f1c0a6584c7d747\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.6.0.aar\ead88570cf6fcb49d7f1a4d3d4ea4289\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.6.0.aar\ead88570cf6fcb49d7f1a4d3d4ea4289\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.0.aar\a4c3085803c5b1bcb5d790df2250d1bc\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.0.aar\a4c3085803c5b1bcb5d790df2250d1bc\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\862a3c83b7ea405b6000d7ecbf454ba8\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\862a3c83b7ea405b6000d7ecbf454ba8\AndroidManifest.xml:25:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\b9ea13e52747d979850e1b7970b552c4\AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\b9ea13e52747d979850e1b7970b552c4\AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\389deec3b5927b1ec7452b4e31ceb6a4\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\389deec3b5927b1ec7452b4e31ceb6a4\AndroidManifest.xml:2:3-17
+MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.0.aar\5f2fbcb0ebbd1293632580563e3e904c\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.0.aar\5f2fbcb0ebbd1293632580563e3e904c\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.0.aar\8153a210ae3b2ba63498e7b0977894f3\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.0.aar\8153a210ae3b2ba63498e7b0977894f3\AndroidManifest.xml:5:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\833ca9698769fd9073a01c0e07b8d16f\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\833ca9698769fd9073a01c0e07b8d16f\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\139ae72cdba13a09214b7054de6fe8b8\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\139ae72cdba13a09214b7054de6fe8b8\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\e55f1c134fee2ff3891b56488a70ef88\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\e55f1c134fee2ff3891b56488a70ef88\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\611ed8ed56f86c701870d5031d123528\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\611ed8ed56f86c701870d5031d123528\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\e5f5a17ef50803e7e368a9a871c26cc2\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\e5f5a17ef50803e7e368a9a871c26cc2\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.0.aar\f727e97a1ceb1eeb3c366a7d9d441caf\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.0.aar\f727e97a1ceb1eeb3c366a7d9d441caf\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.0.aar\4db068915021ead1da39bb631e481599\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.0.aar\4db068915021ead1da39bb631e481599\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.0.aar\c0b3a76dde1aa5b66fe86f0d538b7119\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.0.aar\c0b3a76dde1aa5b66fe86f0d538b7119\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.0.aar\ad9201fd3fd9b1ea4452f738b07c0d48\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.0.aar\ad9201fd3fd9b1ea4452f738b07c0d48\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.0.aar\2ac2f8c8b762e78905ad94d323f59067\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.0.aar\2ac2f8c8b762e78905ad94d323f59067\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\2f4529e7e6806523b7a5534a853d9a44\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\2f4529e7e6806523b7a5534a853d9a44\AndroidManifest.xml:5:5-20
 	android:label
 		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:16:7-39
-	android:allowBackup
-		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:15:7-33
 	android:icon
 		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:17:7-41
+	android:allowBackup
+		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:15:7-33
 	android:theme
 		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:18:7-38
 	android:name
@@ -134,134 +255,156 @@ ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManif
 	android:name
 		ADDED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:29:17-81
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.6.0\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.0.aar\84abc29ab6ee5f4e553ae8cf02cdbac6\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.6.0\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.0.aar\84abc29ab6ee5f4e553ae8cf02cdbac6\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.6.0\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.0.aar\84abc29ab6ee5f4e553ae8cf02cdbac6\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.6.0\AndroidManifest.xml:19:19-85
-android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+		ADDED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.0.aar\84abc29ab6ee5f4e553ae8cf02cdbac6\AndroidManifest.xml:19:19-85
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.6.0\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:19:5-78
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:21:22-76
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:21:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.6.0\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:21:5-67
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:22:22-65
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:22:22-65
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.6.0\AndroidManifest.xml:25:7-26:18
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:25:7-26:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:25:90-112
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:25:90-112
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:25:113-137
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:25:113-137
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:25:17-89
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:25:17-89
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:27:7-31:18
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:27:7-31:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:27:162-184
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:27:162-184
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:27:185-208
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:27:185-208
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:27:105-161
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:27:105-161
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:27:17-104
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:27:17-104
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:28:11-30:27
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:28:11-30:27
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:29:15-76
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:29:15-76
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:29:23-74
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:29:23-74
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\11.6.0\AndroidManifest.xml:27:7-137
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:27:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:27:7-137
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:32:88-110
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:32:88-110
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:32:111-135
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:32:111-135
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:32:16-87
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:32:16-87
 service#com.google.android.gms.measurement.AppMeasurementJobService
-ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:33:7-197
+ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:33:7-197
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:33:148-170
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:33:148-170
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:33:171-195
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:33:171-195
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:33:91-147
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:33:91-147
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\11.6.0\AndroidManifest.xml:33:16-90
+		ADDED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:33:16-90
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:23:5-81
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:23:5-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:23:22-79
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:23:22-79
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:25:5-109
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:25:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:25:72-107
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:25:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:25:17-71
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:25:17-71
+permission#com.habitbooster.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:25:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:25:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:25:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:27:5-78
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:27:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:27:22-76
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:27:22-76
+uses-permission#com.habitbooster.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:27:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:27:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:31:9-36:20
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:31:9-36:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:31:85-108
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:31:85-108
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:31:109-169
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:31:109-169
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:31:19-84
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:31:19-84
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:32:13-35:29
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:32:13-35:29
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.habitbooster
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:32:13-35:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:33:17-80
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:33:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:33:25-78
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:33:25-78
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:34:17-60
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:34:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:34:27-58
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:34:27-58
+category#com.habitbooster
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:34:27-58
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:40:9-44:19
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:40:9-44:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:40:83-106
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:40:83-106
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:40:18-82
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:40:18-82
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:41:13-43:29
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:41:13-43:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:41:28-51
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:41:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:42:17-79
+ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:42:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\11.6.0\AndroidManifest.xml:42:25-77
+		ADDED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:42:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.6.0\AndroidManifest.xml:6:9-194
+ADDED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.0.aar\a10b3aa41dbafc668f1c0a6584c7d747\AndroidManifest.xml:6:9-194
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.6.0\AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.0.aar\a10b3aa41dbafc668f1c0a6584c7d747\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.6.0\AndroidManifest.xml:6:144-168
+		ADDED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.0.aar\a10b3aa41dbafc668f1c0a6584c7d747\AndroidManifest.xml:6:144-168
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.6.0\AndroidManifest.xml:6:169-192
+		ADDED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.0.aar\a10b3aa41dbafc668f1c0a6584c7d747\AndroidManifest.xml:6:169-192
 	android:name
-		ADDED from [com.google.firebase:firebase-common:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\11.6.0\AndroidManifest.xml:6:79-143
+		ADDED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.0.aar\a10b3aa41dbafc668f1c0a6584c7d747\AndroidManifest.xml:6:79-143
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.6.0\AndroidManifest.xml:20:9-121
+ADDED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.0.aar\a4c3085803c5b1bcb5d790df2250d1bc\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.6.0\AndroidManifest.xml:20:66-119
+		ADDED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.0.aar\a4c3085803c5b1bcb5d790df2250d1bc\AndroidManifest.xml:20:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.6.0] D:\mobile\HabitBooster\react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.6.0\AndroidManifest.xml:20:20-65
+		ADDED from [com.google.android.gms:play-services-basement:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.6.0.aar\a4c3085803c5b1bcb5d790df2250d1bc\AndroidManifest.xml:20:20-65
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
