@@ -29,36 +29,19 @@ class HabitDetail extends Component {
         //TODO: open datepicker at the current startdate and enddate not the current real date
     }
 
+    getCategoryNames() {
+        let names = [];
+        let categories = this.props.categories;
+        console.log("Get category names: ", categories);
+        for(let i=0; i<categories.length; i++) {
+            names.push(categories[i].name);
+            console.log("Category names: ", names);
+        }
+        return names;
+    }
+
     async updateHabit() {
         console.log("Update: ", this.state.title);
-        // let habit = {
-        //     title: this.state.title,
-        //     category: this.state.category,
-        //     startDate: this.state.startDateTimestamp,
-        //     endDate: this.state.endDateTimestamp
-        // };
-
-        // let habits = await AsyncStorage.getItem("habits");
-        // habits = JSON.parse(habits);
-        // if (habits === null | habits === undefined) {
-        //     habits = [];
-        // }
-        //
-        // let index = habits.findIndex((h) => {
-        //     return h.title === this.state.oldTitle
-        // });
-        // console.log("index: ", index);
-        // if (index !== -1) {
-        //     // habit exits
-        //     habits[index] = habit;
-        //     console.log("New habits: ", habits);
-        //     AsyncStorage.setItem("habits", JSON.stringify(habits));
-        //     Alert.alert("Yeei", "Habit updated.");
-        //     Actions.home();
-        // }
-        // else {
-        //     Alert.alert("Ooops", "Cannot update habit. Habit not found.");
-        // }
 
         const uid = this.props.user.id;
         firebase.database().ref('accounts/' + uid + '/habits/' + this.props.habit.id)
@@ -68,9 +51,6 @@ class HabitDetail extends Component {
                 startDate: this.state.startDateTimestamp,
                 endDate: this.state.endDateTimestamp
             });
-            // .then(() => {
-            //
-            // })
         alert("Habit updated");
         Actions.home();
     }
@@ -79,84 +59,15 @@ class HabitDetail extends Component {
         //TODO: Integrate into redux flow
         console.log("Delete habit: ", this.state);
 
-        // let habit = this.props.habit;
-        // let habits = await AsyncStorage.getItem("habits");
-        // habits = JSON.parse(habits);
-        // if (habits === null || habits === undefined) {
-        //     habits = [];
-        // }
-        //
-        // let index = habits.findIndex((h) => {
-        //     return h.title === habit.title
-        // });
-        //
-        // if (index !== -1) {
-        //     // habit exits
-        //     habits.splice(index, 1);
-        //     console.log("Remaining habits: ", habits);
-        //     AsyncStorage.setItem("habits", JSON.stringify(habits));
-        //     Alert.alert("Yeei", "Habit deleted.");
-        //     Actions.home();
-        // }
-        // else {
-        //     Alert.alert("Ooops", "Cannot delete habit. Habit not found.");
-        // }
 
         const uid = this.props.user.id;
         firebase.database().ref('accounts/' + uid + '/habits/' + this.props.habit.id)
             .remove();
-            // .then(() => {
-            //
-            // })
         alert("Habit deleted");
         Actions.home();
     }
 
     async completeHabit() {
-        //TODO: Integrate into redux flow
-        // console.log("Delete habit: ", this.state);
-        //
-        // let habit = this.props.habit;
-        // let habits = await AsyncStorage.getItem("habits");
-        // let habits_completed = await AsyncStorage.getItem("habits_completed");
-        // habits = JSON.parse(habits);
-        // habits_completed = JSON.parse(habits_completed);
-        // if (habits === null || habits === undefined) {
-        //     habits = [];
-        // }
-        // if (habits_completed === null || habits_completed === undefined) {
-        //     habits_completed = [];
-        // }
-        //
-        //
-        // let index_habit = habits.findIndex((h) => {
-        //     return h.title === habit.title
-        // });
-        //
-        // let index_habit_completed = habits_completed.findIndex((h) => {
-        //     return h.title === habit.title
-        // });
-        //
-        // if (index_habit !== -1) {
-        //     // habit exits
-        //     habits.splice(index_habit, 1);
-        //     console.log("Remaining habits: ", habits);
-        //     AsyncStorage.setItem("habits", JSON.stringify(habits));
-        //
-        //     if (index_habit_completed === -1) {
-        //         // habit not completed yet
-        //         habits_completed.push(habit);
-        //         AsyncStorage.setItem("habits_completed", JSON.stringify(habits_completed));
-        //         Alert.alert("Yeei", "Habit completed.");
-        //         Actions.home();
-        //     }
-        //     else {
-        //         Alert.alert("Ooops", "Cannot complete habit. Habit already completed..");
-        //     }
-        // }
-        // else {
-        //     Alert.alert("Ooops", "Cannot complete habit. Habit not found.");
-        // }
 
         const uid = this.props.user.id;
         //Delete from active habits
@@ -171,9 +82,6 @@ class HabitDetail extends Component {
                 startDate: this.state.startDateTimestamp,
                 endDate: this.state.endDateTimestamp
             });
-            // .then(() => {
-            //
-            // });
         alert("Habit completed");
         Actions.home();
 
@@ -250,16 +158,12 @@ class HabitDetail extends Component {
                     placeholder={"Category"}
                     placeholderTextColor={'#b6b6b4'}
                     defaultValue={this.state.category}
-                    editable={false}
-                    // onChangeText={(text) => {
-                    //     this.setState({category: text});
-                    // }}
                     onFocus={() => this.setState({isCategorySelectorVisible: true})}
                     style={styles.inputText}
                 />
                 <View style={{justifyContent:"center", alignItems: "center"}}>
                     <ListPopover
-                        list={["A","B","C"]}
+                        list={this.getCategoryNames()}
                         isVisible={this.state.isCategorySelectorVisible}
                         onClick={(item) => this.setState({category: item})}
                         onClose={() => this.setState({isCategorySelectorVisible: false})}/>
@@ -390,7 +294,8 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (state) => {
     return {
-        user: state.user
+        user: state.user,
+        categories: state.categories
     }
 };
 

@@ -3,8 +3,9 @@ import {View, AsyncStorage, Text, StyleSheet} from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import {Svg, Circle, Rect} from 'react-native-svg';
 import {Pie} from 'react-native-pathjs-charts'
+import {connect} from "react-redux";
 
-export default class Stats extends Component {
+class Stats extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,11 +19,7 @@ export default class Stats extends Component {
     }
 
     async fetchHabits() {
-        let habits = await AsyncStorage.getItem("habits");
-        habits = JSON.parse(habits);
-        if (habits === null) {
-            habits = [];
-        }
+        let habits = this.props.habits.items;
 
         let filtered = this.filterByCategory(habits);
         console.log("Filtered: ", filtered);
@@ -106,4 +103,20 @@ const styles = StyleSheet.create({
         fontSize: 16
     }
 });
+
+const mapStateToProps = (state) => {
+    return {
+        habits: state.habits
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+    }
+};
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Stats);
 

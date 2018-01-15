@@ -17,7 +17,7 @@ class ViewCategories extends Component {
     }
 
     componentDidMount() {
-        this.fetchAndSynchronizeData();
+        // this.fetchAndSynchronizeData();
     }
 
     fetchAndSynchronizeData() {

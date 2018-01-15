@@ -37,16 +37,8 @@ class SignIn extends Component {
                         this.isAdmin({uid, email, name, token})
                             .then((isAdmin) => {
                                 this.props.saveUser(email, token, uid, name, isAdmin);
-                                if(isAdmin) {
-                                    Actions.adminHome();
-                                }
-                                else {
-                                    Actions.home();
-                                }
+                                Actions.common();
                             });
-
-
-
                     } else {
                         console.log("User not auth")
                     }

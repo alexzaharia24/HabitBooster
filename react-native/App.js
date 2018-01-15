@@ -18,6 +18,7 @@ import SignIn from "./app/containers/SignIn";
 import AdminHome from "./app/containers/AdminHome";
 import AddCategory from "./app/containers/AddCategory";
 import CategoryDetail from "./app/containers/CategoryDetail";
+import Common from "./app/containers/Common";
 
 
 export default class App extends Component {
@@ -108,6 +109,12 @@ export default class App extends Component {
                                 title="Category detail"
                                 component={CategoryDetail}
                                 hideNavBar={false}
+                            />
+                            <Scene
+                                key="common"
+                                title="Common"
+                                component={Common}
+                                hideNavBar={true}
                             />
                         </Drawer>
                     </Scene>

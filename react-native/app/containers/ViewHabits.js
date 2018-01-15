@@ -19,7 +19,7 @@ class ViewHabits extends Component {
     componentDidMount() {
         // this.fetchHabits();
         // console.log("Props: ", this.props);
-        this.fetchAndSynchronizeData();
+        // this.fetchAndSynchronizeData();
     }
 
     fetchAndSynchronizeData() {

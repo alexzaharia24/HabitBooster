@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import moment from 'moment';
 import firebase from 'react-native-firebase';
+import ListPopover from "react-native-list-popover";
 
 class AddHabit extends Component {
     constructor(props) {
@@ -19,7 +20,19 @@ class AddHabit extends Component {
             endDateTimestamp: 0,
             isStartDatePickerVisible: false,
             isEndDatePickerVisible: false,
+            isCategorySelectorVisible: false,
         }
+    }
+
+    getCategoryNames() {
+        let names = [];
+        let categories = this.props.categories;
+        console.log("Get category names: ", categories);
+        for(let i=0; i<categories.length; i++) {
+            names.push(categories[i].name);
+            console.log("Category names: ", names);
+        }
+        return names;
     }
 
     showStartDatePicker = () => {
@@ -136,11 +149,16 @@ class AddHabit extends Component {
                     placeholder={"Category"}
                     placeholderTextColor={'#b6b6b4'}
                     defaultValue={this.state.category}
-                    onChangeText={(text) => {
-                        this.setState({category: text});
-                    }}
+                    onFocus={() => this.setState({isCategorySelectorVisible: true})}
                     style={styles.inputText}
                 />
+                <View style={{justifyContent:"center", alignItems: "center"}}>
+                    <ListPopover
+                        list={this.getCategoryNames()}
+                        isVisible={this.state.isCategorySelectorVisible}
+                        onClick={(item) => this.setState({category: item})}
+                        onClose={() => this.setState({isCategorySelectorVisible: false})}/>
+                </View>
                 <TextInput
                     placeholder={"Start date"}
                     placeholderTextColor={'#b6b6b4'}
@@ -218,7 +236,8 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (state) => {
     return {
-        user: state.user
+        user: state.user,
+        categories: state.categories
     }
 };
 
