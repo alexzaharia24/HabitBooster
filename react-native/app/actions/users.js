@@ -1,11 +1,11 @@
-import { AsyncStorage } from 'react-native';
+import {AsyncStorage} from 'react-native';
 import {
     SIGN_IN_STARTED, SIGN_IN_SUCCESS, SIGN_IN_FAIL,
     SIGN_UP_STARTED, SIGN_UP_SUCCESS, SIGN_UP_FAIL, SAVE_USER_TOKEN, SAVE_USER,
     SIGN_OUT_STARTED, SIGN_OUT_SUCCESS, SIGN_OUT_FAIL
 } from './types'
 
-//import firebase from 'react-native-firebase';
+import firebase from 'react-native-firebase';
 
 export const signInStarted = (email) => {
     return {
@@ -38,15 +38,16 @@ export const saveUserToken = (token) => {
     }
 };
 
-export const saveUser = (email, token, id, name) => {
+export const saveUser = (email, token, id, name, isAdmin) => {
     return {
         type: SAVE_USER,
         email: email,
         token: token,
         id: id,
-        name: name
+        name: name,
+        isAdmin: isAdmin
     }
-}
+};
 
 export const signIn = (email, password) => {
     // email = "abc@c.com";
@@ -66,9 +67,9 @@ export const signIn = (email, password) => {
                     .then((response) => {
                         let promise = new Promise(
                             (resolve, reject) => {
-                                dispatch(saveUserToken(response))
-                                resolve()
-                                reject()    
+                                dispatch(saveUserToken(response));
+                                resolve();
+                                reject()
                             }
                         )
                     })
@@ -77,7 +78,7 @@ export const signIn = (email, password) => {
                     })
             })
             .catch((error) => {
-                dispatch(signInFail())
+                dispatch(signInFail());
                 console.log("E: ", error);
             })
     }
@@ -139,16 +140,16 @@ export const signOut = () => {
                 dispatch(signOutSuccess());
             })
             .catch((error) => {
-                dispatch(signOutFail())
+                dispatch(signOutFail());
                 console.log("E: ", error);
             })
     }
-}
+};
 
 const removeLocalCredentials = () => {
     AsyncStorage.removeItem("email");
     AsyncStorage.removeItem("token");
-}
+};
 
 export const signOutStarted = () => {
     return {

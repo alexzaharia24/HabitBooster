@@ -1,9 +1,7 @@
 import {
     FETCH_HABITS_STARTED, FETCH_HABITS_SUCCESS, FETCH_HABITS_FAIL,
-    EDIT_HABIT_STARTED, EDIT_HABIT_SUCCESS, EDIT_HABIT_FAIL
+    EDIT_HABIT_STARTED, EDIT_HABIT_SUCCESS, EDIT_HABIT_FAIL, REFRESH_HABITS, REFRESH_COMPLETED_HABITS
 } from './types'
-
-//import firebase from 'react-native-firebase';
 
 export const fetchHabitsStarted = (uid) => {
     return {
@@ -31,19 +29,19 @@ export const fetchHabitsFail = () => {
 
 export const fetchHabits = (uid) => {
     return (dispatch) => {
-        dispatch(fetchHabitsStarted(uid))
+        dispatch(fetchHabitsStarted(uid));
         return firebase.database()
             .ref('accounts/' + uid + '/habits')
             .once('value')
             .then((habits) => {
                 const items = habits.val();
-                const normalizedItems = normalizeHabitsObject(items)
+                const normalizedItems = normalizeHabitsObject(items);
                 console.log("fetched habits: ", normalizedItems);
                 dispatch(
                     fetchHabitsSuccess(
                         normalizedItems
                     )
-                )
+                );
                 return normalizedItems;
             })
             .catch((error) => {
@@ -51,7 +49,7 @@ export const fetchHabits = (uid) => {
                 dispatch(fetchHabitsFail());
             })
     }
-}
+};
 
 const normalizeHabitsObject = (habits) =>{
     habits = (habits === null || habits === undefined)? [] : habits;
@@ -60,12 +58,30 @@ const normalizeHabitsObject = (habits) =>{
             return {
                 id: key,
                 title: habits[key].title,
+                category: habits[key].category,
                 startDate: habits[key].startDate,
                 endDate: habits[key].endDate
             }
         }
     )
-}
+};
+
+export const refreshHabits = (habits) => {
+    return {
+        type: REFRESH_HABITS,
+        items: habits
+    }
+};
+
+export const refreshCompletedHabits = (habits) => {
+    return {
+        type: REFRESH_COMPLETED_HABITS,
+        items: habits
+    }
+};
+
+
+
 
 export const editHabitStarted = () => {
     return {
@@ -95,7 +111,7 @@ export const editHabit = (uid, habit) => {
     //does not save to store the new edited habit
     //TODO: fix this
     return (dispatch) => {
-        dispatch(editHabitStarted());
+        // dispatch(editHabitStarted());
         return firebase.database()
             .ref('/accounts/' + uid + '/habits/' + habit.id)
             .set({
@@ -111,5 +127,5 @@ export const editHabit = (uid, habit) => {
                 console.log("Could not edit habit: ", error);
             }))
     }
-}
+};
 

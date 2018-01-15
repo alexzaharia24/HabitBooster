@@ -9,7 +9,7 @@ import ViewHabits from "./ViewHabits";
 
 export class Home extends Component {
     render() {
-        console.log("home props: ", this.props);
+        // console.log("home props: ", this.props);
         return (
             <View style={styles.mainView}>
                 <ViewHabits/>

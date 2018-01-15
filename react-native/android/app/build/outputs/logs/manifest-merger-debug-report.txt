@@ -12,7 +12,9 @@ MERGED from [:react-native-firebase] D:\mobile\HabitBooster\react-native\node_mo
 MERGED from [com.google.firebase:firebase-auth:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.6.0.aar\8eba759bcb0442c4d1f3c141872f3b7f\AndroidManifest.xml:16:1-21:12
 MERGED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.0.aar\84abc29ab6ee5f4e553ae8cf02cdbac6\AndroidManifest.xml:16:1-21:12
 MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\d7845ca1fb298e29c09fcb0611d90b8a\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-database:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-11.6.0.aar\a1c25cfb4b38a21ed1cf432257432ff7\AndroidManifest.xml:2:1-4:12
 MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:16:1-35:12
+MERGED from [com.google.firebase:firebase-database-connection:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.6.0.aar\7b581473ad3d9a43fbac9ebc23f388be\AndroidManifest.xml:2:1-4:12
 MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:16:1-29:12
 MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:16:1-47:12
 MERGED from [com.google.firebase:firebase-common:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-11.6.0.aar\a10b3aa41dbafc668f1c0a6584c7d747\AndroidManifest.xml:2:1-8:12
@@ -26,6 +28,7 @@ MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Alex\.gradle\caches\
 MERGED from [org.webkit:android-jsc:r174650] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\389deec3b5927b1ec7452b4e31ceb6a4\AndroidManifest.xml:1:1-3:12
 MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.0.aar\5f2fbcb0ebbd1293632580563e3e904c\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.0.aar\8153a210ae3b2ba63498e7b0977894f3\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-database-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.6.0.aar\be07af3d2d9480b73831ac1b406471f7\AndroidManifest.xml:2:1-6:12
 MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\833ca9698769fd9073a01c0e07b8d16f\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\139ae72cdba13a09214b7054de6fe8b8\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\e55f1c134fee2ff3891b56488a70ef88\AndroidManifest.xml:17:1-27:12
@@ -39,6 +42,7 @@ MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Us
 MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.0.aar\4db068915021ead1da39bb631e481599\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.0.aar\c0b3a76dde1aa5b66fe86f0d538b7119\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.0.aar\ad9201fd3fd9b1ea4452f738b07c0d48\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-database-connection-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.6.0.aar\e3525f05b0247d2abbfe092751298f12\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.0.aar\2ac2f8c8b762e78905ad94d323f59067\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\2f4529e7e6806523b7a5534a853d9a44\AndroidManifest.xml:2:1-6:12
 INJECTED from D:\mobile\HabitBooster\react-native\android\app\src\main\AndroidManifest.xml:1:1-32:12
@@ -96,8 +100,12 @@ MERGED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Alex\.gr
 MERGED from [com.google.android.gms:play-services-base:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-11.6.0.aar\84abc29ab6ee5f4e553ae8cf02cdbac6\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\d7845ca1fb298e29c09fcb0611d90b8a\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-core:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-core-11.6.0.aar\d7845ca1fb298e29c09fcb0611d90b8a\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-11.6.0.aar\a1c25cfb4b38a21ed1cf432257432ff7\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-11.6.0.aar\a1c25cfb4b38a21ed1cf432257432ff7\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-analytics:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.6.0.aar\a2066f0a1e2efd2aececf066cb240497\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.6.0.aar\7b581473ad3d9a43fbac9ebc23f388be\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.6.0.aar\7b581473ad3d9a43fbac9ebc23f388be\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-analytics-impl:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.6.0.aar\e6633075fdc58de472c36bac2c2c99ee\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-iid:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.6.0.aar\66cd48cac7bc992fa66ab02eb3b6e7bd\AndroidManifest.xml:17:5-43
@@ -122,6 +130,8 @@ MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\
 MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.0.aar\5f2fbcb0ebbd1293632580563e3e904c\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.0.aar\8153a210ae3b2ba63498e7b0977894f3\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.0.aar\8153a210ae3b2ba63498e7b0977894f3\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.6.0.aar\be07af3d2d9480b73831ac1b406471f7\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.6.0.aar\be07af3d2d9480b73831ac1b406471f7\AndroidManifest.xml:4:5-43
 MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\833ca9698769fd9073a01c0e07b8d16f\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\833ca9698769fd9073a01c0e07b8d16f\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\139ae72cdba13a09214b7054de6fe8b8\AndroidManifest.xml:21:5-23:63
@@ -148,6 +158,8 @@ MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] C:\Users\Ale
 MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.0.aar\c0b3a76dde1aa5b66fe86f0d538b7119\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.0.aar\ad9201fd3fd9b1ea4452f738b07c0d48\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.0.aar\ad9201fd3fd9b1ea4452f738b07c0d48\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-connection-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.6.0.aar\e3525f05b0247d2abbfe092751298f12\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-connection-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.6.0.aar\e3525f05b0247d2abbfe092751298f12\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.0.aar\2ac2f8c8b762e78905ad94d323f59067\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.0.aar\2ac2f8c8b762e78905ad94d323f59067\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\2f4529e7e6806523b7a5534a853d9a44\AndroidManifest.xml:4:5-43
@@ -198,6 +210,8 @@ MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\
 MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.0.aar\5f2fbcb0ebbd1293632580563e3e904c\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.0.aar\8153a210ae3b2ba63498e7b0977894f3\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-auth-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.6.0.aar\8153a210ae3b2ba63498e7b0977894f3\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.6.0.aar\be07af3d2d9480b73831ac1b406471f7\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.6.0.aar\be07af3d2d9480b73831ac1b406471f7\AndroidManifest.xml:5:5-20
 MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\833ca9698769fd9073a01c0e07b8d16f\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\833ca9698769fd9073a01c0e07b8d16f\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\139ae72cdba13a09214b7054de6fe8b8\AndroidManifest.xml:25:5-20
@@ -216,6 +230,8 @@ MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] C:\Users\Ale
 MERGED from [com.google.firebase:firebase-analytics-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.6.0.aar\c0b3a76dde1aa5b66fe86f0d538b7119\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.0.aar\ad9201fd3fd9b1ea4452f738b07c0d48\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-common-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.6.0.aar\ad9201fd3fd9b1ea4452f738b07c0d48\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-connection-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.6.0.aar\e3525f05b0247d2abbfe092751298f12\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-connection-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.6.0.aar\e3525f05b0247d2abbfe092751298f12\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.0.aar\2ac2f8c8b762e78905ad94d323f59067\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.6.0.aar\2ac2f8c8b762e78905ad94d323f59067\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-iid-license:11.6.0] C:\Users\Alex\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.6.0.aar\2f4529e7e6806523b7a5534a853d9a44\AndroidManifest.xml:5:5-20

@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import { Actions } from 'react-native-router-flux';
-import { Text, View, TouchableHighlight, StyleSheet, Image, TextInput, Alert, AsyncStorage } from 'react-native';
+import React, {Component} from 'react';
+import {Actions} from 'react-native-router-flux';
+import {Text, View, TouchableHighlight, StyleSheet, Image, TextInput, Alert, AsyncStorage} from 'react-native';
 import firebase from 'react-native-firebase'
-import { connect } from 'react-redux';
-import { signIn as signInAction, saveUser as saveUserAction } from '../actions/users';
+import {connect} from 'react-redux';
+import {signIn as signInAction, saveUser as saveUserAction} from '../actions/users';
 
 class SignIn extends Component {
     constructor(props) {
         super(props);
-        this.state = { email: '', password: '', redirected: false };
+        this.state = {email: '', password: '', redirected: false};
     }
 
     componentDidMount() {
@@ -17,17 +17,15 @@ class SignIn extends Component {
     }
 
     componentWillReceiveProps() {
-        // console.log("Redirected: ", this.state.redirected);
-        // this.redirectIfSignedIn();
         this.isSignedIn();
     }
 
     isSignedIn() {
         console.log("Verify auth");
-        if(this.state.redirected === false) {
+        if (this.state.redirected === false) {
             firebase.auth().onAuthStateChanged(
                 async (user) => {
-                    console.log("Verifying...")
+                    console.log("Verifying...");
                     if (user) {
                         console.log("Is auth... waiting for user data...");
                         let uid = await user.uid;
@@ -35,74 +33,45 @@ class SignIn extends Component {
                         let token = await user.getIdToken();
                         let name = await user.displayName;
                         console.log("User auth ", name);
-    
-                        this.props.saveUser(email, token, uid, name);
-                        Actions.home();
-    
+
+                        this.isAdmin({uid, email, name, token})
+                            .then((isAdmin) => {
+                                this.props.saveUser(email, token, uid, name, isAdmin);
+                                if(isAdmin) {
+                                    Actions.adminHome();
+                                }
+                                else {
+                                    Actions.home();
+                                }
+                            });
+
+
+
                     } else {
                         console.log("User not auth")
                     }
-                })
+                });
             this.setState({
                 redirected: true
             })
         }
     }
 
-    // async isSignedIn() {
-    //     //should delete this
-    //     //(fixed) could use firebase.auth().onAuthStateChanged but it fires multiple times
-    //     let localToken = await AsyncStorage.getItem("token");
-    //     let localEmail = await AsyncStorage.getItem("email");
-    //     console.log('Local token: ', localToken);
-    //     console.log('Local email: ', localEmail);
-    //     console.log('Store user: ', this.props.user);
-
-    //     let storeToken = this.props.user.token;
-    //     let storeEmail = this.props.user.email;
-    //     try {
-    //         if (localToken !== null && localToken !== undefined && localEmail !== null && localEmail !== undefined) {
-    //             // if (email !== this.props.user.email) {
-    //             //     throw Error("Local email is outdated.");
-    //             // }
-    //             // if (token !== this.props.user.token) {
-    //             //     throw Error("Local token is outdated.");
-    //             // }
-    //             console.log("User already signed in");
-    //             const user = await firebase.auth().currentUser;
-    //             console.log("Current user: ", user);
-    //             this.props.saveUser(localEmail, localToken);
-    //             return true;
-    //         }
-    //         if (storeToken !== null && storeToken !== undefined && storeEmail !== null && storeEmail !== undefined) {
-    //             console.log("User recently signed in");
-    //             return true;
-    //         }
-    //         console.log("Token or email null");
-    //     } catch (error) {
-    //         console.log(error);
-    //         return false;
-    //     }
-
-    //     console.log("User not signed in");
-    //     return false;
-    // }
+    isAdmin(user) {
+        return firebase.database().ref("admins")
+            .once('value')
+            .then((data) => {
+                const values = data.val();
+                console.log("User: ", user);
+                console.log("Admins: ", values);
+                return values[user.uid] !== undefined;
+            })
+    }
 
     async saveUserLocal(email, token) {
         await AsyncStorage.setItem("email", email);
         await AsyncStorage.setItem("token", token);
     }
-
-    // async redirectIfSignedIn() {
-    //     if (this.state.redirected === false) {
-    //         let authenticated = await this.isSignedIn()
-    //         if (authenticated === true) {
-    //             console.log("Story usery: ", this.props.user);
-    //             this.setState({ redirected: true });
-    //             Actions.home();
-    //         }
-    //     }
-    // }
 
     signIn() {
         // Here make request to server to verify if user exists
@@ -120,7 +89,7 @@ class SignIn extends Component {
     }
 
     goToMain() {
-        Actions.home({ email: this.state.email });
+        Actions.home({email: this.state.email});
     }
 
     render() {
@@ -130,10 +99,6 @@ class SignIn extends Component {
                     <Text style={styles.title}>
                         Habit Booster
                     </Text>
-                    {/* <Image
-                        source={require('../img/logo.png')}
-                        style={styles.logo}
-                    /> */}
                     <Text style={styles.subtitle}>
                         You do it, we track it
                     </Text>
@@ -144,7 +109,7 @@ class SignIn extends Component {
                         placeholderTextColor={'#b6b6b4'}
                         defaultValue={this.state.email}
                         onChangeText={(text) => {
-                            this.setState({ email: text });
+                            this.setState({email: text});
                         }}
                         keyboardType={'email-address'}
                         style={styles.inputEmail}
@@ -154,7 +119,7 @@ class SignIn extends Component {
                         placeholderTextColor={'#b6b6b4'}
                         defaultValue={this.state.password}
                         onChangeText={(text) => {
-                            this.setState({ password: text });
+                            this.setState({password: text});
                         }}
                         secureTextEntry={true}
                         style={styles.inputPassword}
@@ -165,16 +130,16 @@ class SignIn extends Component {
                             this.signIn()
                         }}
                     >
-                        <Text style={{ color: '#fff', fontSize: 18 }}>
+                        <Text style={{color: '#fff', fontSize: 18}}>
                             Sign in
                         </Text>
                     </TouchableHighlight>
-                    <Text style={{ marginTop: 12, fontSize: 14, color: "#b6b6b4" }}>
+                    <Text style={{marginTop: 12, fontSize: 14, color: "#b6b6b4"}}>
                         <Text> Don't have an account? </Text>
-                        <Text style={{ fontWeight: 'bold' }}
-                            onPress={() => {
-                                Actions.signUp();
-                            }}
+                        <Text style={{fontWeight: 'bold'}}
+                              onPress={() => {
+                                  Actions.signUp();
+                              }}
                         > SIGN UP </Text>
                     </Text>
                 </View>
@@ -254,8 +219,8 @@ const mapDispatchToProps = (dispatch) => {
         signIn: (email, password) => {
             return dispatch(signInAction(email, password))
         },
-        saveUser: (email, token, id, name) => {
-            return dispatch(saveUserAction(email, token, id, name))
+        saveUser: (email, token, id, name, isAdmin) => {
+            return dispatch(saveUserAction(email, token, id, name, isAdmin))
         }
     }
 };

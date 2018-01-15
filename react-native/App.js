@@ -14,12 +14,11 @@ import AddHabit from './app/containers/AddHabit';
 import CompletedHabits from "./app/containers/CompletedHabits";
 import Stats from "./app/containers/Stats";
 import firebase from 'react-native-firebase';
+import SignIn from "./app/containers/SignIn";
+import AdminHome from "./app/containers/AdminHome";
+import AddCategory from "./app/containers/AddCategory";
+import CategoryDetail from "./app/containers/CategoryDetail";
 
-
-firebase.auth().signInAnonymously()
-    .then((user) => {
-        console.log(user.isAnonymous);
-    });
 
 export default class App extends Component {
 
@@ -45,6 +44,12 @@ export default class App extends Component {
                             drawerPosition={"left"}
                             hideNavBar
                         >
+                            <Scene
+                                key="signIn"
+                                title="Sign In"
+                                component={SignIn}
+                                hideNavBar={true}
+                            />
                             <Scene
                                 key="home"
                                 title="My habits"
@@ -84,6 +89,24 @@ export default class App extends Component {
                                 key="stats"
                                 title="Stats"
                                 component={Stats}
+                                hideNavBar={false}
+                            />
+                            <Scene
+                                key="adminHome"
+                                title="Admin home"
+                                component={AdminHome}
+                                hideNavBar={false}
+                            />
+                            <Scene
+                                key="addCategory"
+                                title="Add Category"
+                                component={AddCategory}
+                                hideNavBar={false}
+                            />
+                            <Scene
+                                key="categoryDetail"
+                                title="Category detail"
+                                component={CategoryDetail}
                                 hideNavBar={false}
                             />
                         </Drawer>

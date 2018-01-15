@@ -2,34 +2,44 @@ import React, {Component} from 'react';
 import {Text, View, StyleSheet, FlatList, TouchableOpacity, AsyncStorage} from "react-native";
 import {connect} from "react-redux";
 import {Actions} from "react-native-router-flux";
-import {fetchHabits as fetchHabitsAction} from '../actions/habits';
+import {refreshHabits as refreshHabitsAction, fetchHabits as fetchHabitsAction} from '../actions/habits';
 import moment from 'moment';
+import firebase from 'react-native-firebase';
 
 
 class ViewHabits extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            habits: []
-        }
+            habits: this.props.habits.items
+        };
+        // console.log("PP1: ", this.props);
     }
 
     componentDidMount() {
-        this.fetchHabits()
+        // this.fetchHabits();
+        // console.log("Props: ", this.props);
+        this.fetchAndSynchronizeData();
     }
 
-    async fetchHabits() {
-        let habits = await AsyncStorage.getItem("habits");
-        habits = JSON.parse(habits);
-        if (habits === null) {
-            habits = [];
-        }
-        this.setState({
-            habits: habits
-        })
+    fetchAndSynchronizeData() {
+        const uid = this.props.user.id;
+        firebase.database().ref("accounts/"+ uid +"/habits")
+            .on("value", (data) => {
+                const habits = [];
+                const values = data.val();
+                // console.log("Habits changed from server: ", values);
+                for(let h in values) {
+                    let habit = values[h];
+                    habit["id"] = h;
+                    habits.push(habit);
+                }
+                // console.log("To be processed: ", habits);
+                this.props.refreshHabits(habits);
+            });
     }
 
-    _keyExtractor = (item, index) => item.title;
+    _keyExtractor = (item, index) => item.id;
 
     _onSelectItem = (item) => {
         console.log(item);
@@ -52,12 +62,14 @@ class ViewHabits extends Component {
     };
 
     render() {
-        console.log("ViewHabits");
+        // console.log("ViewHabits");
+        // console.log("Habits: ", this.state.habits);
+
         return (
             <View style={styles.mainView}>
 
                 <FlatList
-                    data={this.state.habits}
+                    data={this.props.habits.items}
                     keyExtractor={this._keyExtractor}
                     renderItem={this._renderHabitItem}
                 />
@@ -106,8 +118,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        fetchHabits: (uid) => {
-            return dispatch(fetchHabitsAction(uid))
+        refreshHabits: (habits) => {
+            return dispatch(refreshHabitsAction(habits))
         }
     }
 };

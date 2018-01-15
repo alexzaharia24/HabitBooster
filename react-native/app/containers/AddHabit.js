@@ -4,6 +4,7 @@ import {Actions} from 'react-native-router-flux';
 import {connect} from 'react-redux';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import moment from 'moment';
+import firebase from 'react-native-firebase';
 
 class AddHabit extends Component {
     constructor(props) {
@@ -75,31 +76,48 @@ class AddHabit extends Component {
     async saveHabit() {
         console.log("Save habit: ", this.state);
 
-        let habit = {
-            title: this.state.title,
-            category: this.state.category,
-            startDate: this.state.startDateTimestamp,
-            endDate: this.state.endDateTimestamp
-        };
+        // let habit = {
+        //     title: this.state.title,
+        //     category: this.state.category,
+        //     startDate: this.state.startDateTimestamp,
+        //     endDate: this.state.endDateTimestamp
+        // };
+        //
+        // let habits = await AsyncStorage.getItem("habits");
+        // habits = JSON.parse(habits);
+        // if (habits === null) {
+        //     habits = [];
+        // }
+        //
+        // if (habits.findIndex((h) => {
+        //         return h.title === habit.title
+        //     }) === -1) {
+        //     // habit does not already exist
+        //     habits.push(habit);
+        //     AsyncStorage.setItem("habits", JSON.stringify(habits));
+        //     Alert.alert("Yeei", "Habit added.");
+        //     Actions.home();
+        // }
+        // else {
+        //     Alert.alert("Ooops", "Habit with same title already exits");
+        // }
 
-        let habits = await AsyncStorage.getItem("habits");
-        habits = JSON.parse(habits);
-        if (habits === null) {
-            habits = [];
-        }
+        const uid = this.props.user.id;
+        console.log("UID: ", uid);
 
-        if (habits.findIndex((h) => {
-                return h.title === habit.title
-            }) === -1) {
-            // habit does not already exist
-            habits.push(habit);
-            AsyncStorage.setItem("habits", JSON.stringify(habits));
-            Alert.alert("Yeei", "Habit added.");
-            Actions.home();
-        }
-        else {
-            Alert.alert("Ooops", "Habit with same title already exits");
-        }
+        firebase.database()
+            .ref('accounts/' + uid + '/habits')
+            .push({
+                title: this.state.title,
+                category: this.state.category,
+                startDate: this.state.startDateTimestamp,
+                endDate: this.state.endDateTimestamp
+            });
+            // .then(() => {
+            //
+            // })
+        alert("Habit added");
+        Actions.home();
     }
 
     render() {

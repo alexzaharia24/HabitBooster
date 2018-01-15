@@ -13,28 +13,50 @@ class MenuDrawer extends Component {
     }
 
     render() {
-        console.log("render");
-        return (
-            <View>
-                <Button
-                    title="Home"
-                    onPress={() => Actions.home()}
-                />
-                <Button
-                    title="Completed habits"
-                    onPress={() => Actions.completedHabits()}
-                />
-                <Button
-                    title="Stats"
-                    onPress={() => Actions.stats()}
-                />
-            </View>
-        )
+        if(this.props.user.isAdmin) {
+            return(
+                <View>
+                    <Button
+                        title="Admin home"
+                        onPress={() => Actions.adminHome()}
+                    />
+                    <Button
+                        title="Sign out"
+                        onPress={() => this.signOut()}
+                    />
+                </View>
+            )
+        }
+        else {
+            return (
+                <View>
+                    <Button
+                        title="Home"
+                        onPress={() => Actions.home()}
+                    />
+                    <Button
+                        title="Completed habits"
+                        onPress={() => Actions.completedHabits()}
+                    />
+                    <Button
+                        title="Stats"
+                        onPress={() => Actions.stats()}
+                    />
+                    <Button
+                        title="Sign out"
+                        onPress={() => this.signOut()}
+                    />
+                </View>
+            )
+        }
+
     }
 }
 
 const mapStateToProps = (state) => {
-    return {}
+    return {
+        user: state.user
+    }
 };
 
 const mapDispatchToProps = (dispatch) => {

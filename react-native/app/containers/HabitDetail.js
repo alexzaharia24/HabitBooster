@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import {Text, View, StyleSheet, FlatList, TouchableOpacity, TextInput, Alert, AsyncStorage} from "react-native";
+import {Text, View, StyleSheet, FlatList, TouchableOpacity, TextInput, Alert, AsyncStorage, Picker} from "react-native";
 import {connect} from "react-redux";
 import {editHabit as editHabitAction} from "../actions/habits";
 import moment from 'moment';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import {Actions} from 'react-native-router-flux';
-////import firebase from 'react-native-firebase';
+import firebase from 'react-native-firebase';
+import ListPopover from "react-native-list-popover";
 
 
 class HabitDetail extends Component {
@@ -22,6 +23,7 @@ class HabitDetail extends Component {
             endDateTimestamp: this.props.habit.endDate,
             isStartDatePickerVisible: false,
             isEndDatePickerVisible: false,
+            isCategorySelectorVisible: false,
         }
 
         //TODO: open datepicker at the current startdate and enddate not the current real date
@@ -29,109 +31,152 @@ class HabitDetail extends Component {
 
     async updateHabit() {
         console.log("Update: ", this.state.title);
-        let habit = {
-            title: this.state.title,
-            category: this.state.category,
-            startDate: this.state.startDateTimestamp,
-            endDate: this.state.endDateTimestamp
-        };
+        // let habit = {
+        //     title: this.state.title,
+        //     category: this.state.category,
+        //     startDate: this.state.startDateTimestamp,
+        //     endDate: this.state.endDateTimestamp
+        // };
 
-        let habits = await AsyncStorage.getItem("habits");
-        habits = JSON.parse(habits);
-        if (habits === null | habits === undefined) {
-            habits = [];
-        }
+        // let habits = await AsyncStorage.getItem("habits");
+        // habits = JSON.parse(habits);
+        // if (habits === null | habits === undefined) {
+        //     habits = [];
+        // }
+        //
+        // let index = habits.findIndex((h) => {
+        //     return h.title === this.state.oldTitle
+        // });
+        // console.log("index: ", index);
+        // if (index !== -1) {
+        //     // habit exits
+        //     habits[index] = habit;
+        //     console.log("New habits: ", habits);
+        //     AsyncStorage.setItem("habits", JSON.stringify(habits));
+        //     Alert.alert("Yeei", "Habit updated.");
+        //     Actions.home();
+        // }
+        // else {
+        //     Alert.alert("Ooops", "Cannot update habit. Habit not found.");
+        // }
 
-        let index = habits.findIndex((h) => {
-            return h.title === this.state.oldTitle
-        });
-        console.log("index: ", index);
-        if (index !== -1) {
-            // habit exits
-            habits[index] = habit;
-            console.log("New habits: ", habits);
-            AsyncStorage.setItem("habits", JSON.stringify(habits));
-            Alert.alert("Yeei", "Habit updated.");
-            Actions.home();
-        }
-        else {
-            Alert.alert("Ooops", "Cannot update habit. Habit not found.");
-        }
+        const uid = this.props.user.id;
+        firebase.database().ref('accounts/' + uid + '/habits/' + this.props.habit.id)
+            .update({
+                title: this.state.title,
+                category: this.state.category,
+                startDate: this.state.startDateTimestamp,
+                endDate: this.state.endDateTimestamp
+            });
+            // .then(() => {
+            //
+            // })
+        alert("Habit updated");
+        Actions.home();
     }
 
     async deleteHabit() {
         //TODO: Integrate into redux flow
         console.log("Delete habit: ", this.state);
 
-        let habit = this.props.habit;
-        let habits = await AsyncStorage.getItem("habits");
-        habits = JSON.parse(habits);
-        if (habits === null || habits === undefined) {
-            habits = [];
-        }
+        // let habit = this.props.habit;
+        // let habits = await AsyncStorage.getItem("habits");
+        // habits = JSON.parse(habits);
+        // if (habits === null || habits === undefined) {
+        //     habits = [];
+        // }
+        //
+        // let index = habits.findIndex((h) => {
+        //     return h.title === habit.title
+        // });
+        //
+        // if (index !== -1) {
+        //     // habit exits
+        //     habits.splice(index, 1);
+        //     console.log("Remaining habits: ", habits);
+        //     AsyncStorage.setItem("habits", JSON.stringify(habits));
+        //     Alert.alert("Yeei", "Habit deleted.");
+        //     Actions.home();
+        // }
+        // else {
+        //     Alert.alert("Ooops", "Cannot delete habit. Habit not found.");
+        // }
 
-        let index = habits.findIndex((h) => {
-            return h.title === habit.title
-        });
-
-        if (index !== -1) {
-            // habit exits
-            habits.splice(index, 1);
-            console.log("Remaining habits: ", habits);
-            AsyncStorage.setItem("habits", JSON.stringify(habits));
-            Alert.alert("Yeei", "Habit deleted.");
-            Actions.home();
-        }
-        else {
-            Alert.alert("Ooops", "Cannot delete habit. Habit not found.");
-        }
+        const uid = this.props.user.id;
+        firebase.database().ref('accounts/' + uid + '/habits/' + this.props.habit.id)
+            .remove();
+            // .then(() => {
+            //
+            // })
+        alert("Habit deleted");
+        Actions.home();
     }
 
     async completeHabit() {
         //TODO: Integrate into redux flow
-        console.log("Delete habit: ", this.state);
+        // console.log("Delete habit: ", this.state);
+        //
+        // let habit = this.props.habit;
+        // let habits = await AsyncStorage.getItem("habits");
+        // let habits_completed = await AsyncStorage.getItem("habits_completed");
+        // habits = JSON.parse(habits);
+        // habits_completed = JSON.parse(habits_completed);
+        // if (habits === null || habits === undefined) {
+        //     habits = [];
+        // }
+        // if (habits_completed === null || habits_completed === undefined) {
+        //     habits_completed = [];
+        // }
+        //
+        //
+        // let index_habit = habits.findIndex((h) => {
+        //     return h.title === habit.title
+        // });
+        //
+        // let index_habit_completed = habits_completed.findIndex((h) => {
+        //     return h.title === habit.title
+        // });
+        //
+        // if (index_habit !== -1) {
+        //     // habit exits
+        //     habits.splice(index_habit, 1);
+        //     console.log("Remaining habits: ", habits);
+        //     AsyncStorage.setItem("habits", JSON.stringify(habits));
+        //
+        //     if (index_habit_completed === -1) {
+        //         // habit not completed yet
+        //         habits_completed.push(habit);
+        //         AsyncStorage.setItem("habits_completed", JSON.stringify(habits_completed));
+        //         Alert.alert("Yeei", "Habit completed.");
+        //         Actions.home();
+        //     }
+        //     else {
+        //         Alert.alert("Ooops", "Cannot complete habit. Habit already completed..");
+        //     }
+        // }
+        // else {
+        //     Alert.alert("Ooops", "Cannot complete habit. Habit not found.");
+        // }
 
-        let habit = this.props.habit;
-        let habits = await AsyncStorage.getItem("habits");
-        let habits_completed = await AsyncStorage.getItem("habits_completed");
-        habits = JSON.parse(habits);
-        habits_completed = JSON.parse(habits_completed);
-        if (habits === null || habits === undefined) {
-            habits = [];
-        }
-        if (habits_completed === null || habits_completed === undefined) {
-            habits_completed = [];
-        }
+        const uid = this.props.user.id;
+        //Delete from active habits
+        firebase.database().ref('accounts/' + uid + '/habits/' + this.props.habit.id)
+            .remove();
+        //Add to completed habits
+        firebase.database()
+            .ref('accounts/' + uid + '/habits_completed')
+            .push({
+                title: this.state.title,
+                category: this.state.category,
+                startDate: this.state.startDateTimestamp,
+                endDate: this.state.endDateTimestamp
+            });
+            // .then(() => {
+            //
+            // });
+        alert("Habit completed");
+        Actions.home();
 
-
-        let index_habit = habits.findIndex((h) => {
-            return h.title === habit.title
-        });
-
-        let index_habit_completed = habits_completed.findIndex((h) => {
-            return h.title === habit.title
-        });
-
-        if (index_habit !== -1) {
-            // habit exits
-            habits.splice(index_habit, 1);
-            console.log("Remaining habits: ", habits);
-            AsyncStorage.setItem("habits", JSON.stringify(habits));
-
-            if (index_habit_completed === -1) {
-                // habit not completed yet
-                habits_completed.push(habit);
-                AsyncStorage.setItem("habits_completed", JSON.stringify(habits_completed));
-                Alert.alert("Yeei", "Habit completed.");
-                Actions.home();
-            }
-            else {
-                Alert.alert("Ooops", "Cannot complete habit. Habit already completed..");
-            }
-        }
-        else {
-            Alert.alert("Ooops", "Cannot complete habit. Habit not found.");
-        }
 
     }
 
@@ -205,11 +250,20 @@ class HabitDetail extends Component {
                     placeholder={"Category"}
                     placeholderTextColor={'#b6b6b4'}
                     defaultValue={this.state.category}
-                    onChangeText={(text) => {
-                        this.setState({category: text});
-                    }}
+                    editable={false}
+                    // onChangeText={(text) => {
+                    //     this.setState({category: text});
+                    // }}
+                    onFocus={() => this.setState({isCategorySelectorVisible: true})}
                     style={styles.inputText}
                 />
+                <View style={{justifyContent:"center", alignItems: "center"}}>
+                    <ListPopover
+                        list={["A","B","C"]}
+                        isVisible={this.state.isCategorySelectorVisible}
+                        onClick={(item) => this.setState({category: item})}
+                        onClose={() => this.setState({isCategorySelectorVisible: false})}/>
+                </View>
                 <TextInput
                     placeholder={"Start date"}
                     placeholderTextColor={'#b6b6b4'}
@@ -280,6 +334,18 @@ class HabitDetail extends Component {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        alignItems: 'center',
+        backgroundColor: '#532860',
+        justifyContent: 'center',
+    },
+    button: {
+        backgroundColor: '#b8c',
+        borderRadius: 4,
+        marginLeft: 10,
+        marginRight: 10,
+        padding: 10,
+    },
     loginBox: {
         flex: 1,
         backgroundColor: '#fff',

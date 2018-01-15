@@ -30,7 +30,8 @@ export const users = (state = {}, action) => {
                 email: action.email,
                 token: action.token,
                 id: action.id,
-                name: action.name, 
+                name: action.name,
+                isAdmin: action.isAdmin
             };
         case types.SIGN_UP_STARTED:
             return {

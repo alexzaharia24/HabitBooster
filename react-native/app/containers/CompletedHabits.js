@@ -2,36 +2,67 @@ import React, {Component} from 'react';
 import {Text, View, StyleSheet, FlatList, TouchableOpacity, AsyncStorage} from "react-native";
 import {connect} from "react-redux";
 import {Actions} from "react-native-router-flux";
-import {fetchHabits as fetchHabitsAction} from '../actions/habits';
+import {refreshCompletedHabits as refreshCompletedHabitsAction} from '../actions/habits';
 import moment from 'moment';
+import firebase from 'react-native-firebase';
 
 
-export default class CompletedHabits extends Component {
+class CompletedHabits extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            habits_completed: []
+            habits_completed: this.props.habits_completed
         }
     }
 
     componentDidMount() {
-        this.fetchHabits()
+        this.fetchAndSynchronizeData()
     }
 
-    async fetchHabits() {
-        let habits_completed = await AsyncStorage.getItem("habits_completed");
-        habits_completed = JSON.parse(habits_completed);
-        if (habits_completed === null) {
-            habits_completed = [];
-        }
-        this.setState({
-            habits_completed: habits_completed
-        })
+    fetchAndSynchronizeData() {
+        const uid = this.props.user.id;
+        firebase.database().ref("accounts/"+ uid +"/habits_completed")
+            .on("value", (data) => {
+                const habits = [];
+                const values = data.val();
+                // console.log("Current completed:" , this.props.habits_completed);
+                console.log("Habits changed from server: ", values);
+                for(let h in values) {
+                    let habit = values[h];
+                    habit["id"] = h;
+                    habits.push(habit);
+                }
+                console.log("To be processed: ", habits);
+                this.props.refreshCompletedHabits(habits);
+            });
     }
 
-    _keyExtractor = (item, index) => item.title;
+    unCompleteHabit(item) {
+        console.log("Uncomplete: ", item);
+        const uid = this.props.user.id;
+        //Delete from completed habits
+        firebase.database().ref('accounts/' + uid + '/habits_completed/' + item.id)
+            .remove();
+        //Add to active habits
+        firebase.database()
+            .ref('accounts/' + uid + '/habits')
+            .push({
+                title: item.title,
+                category: item.category,
+                startDate: item.startDate,
+                endDate: item.endDate
+            });
+            // .then(() => {
+            //
+            // });
+        alert("Habit uncompleted");
+        Actions.home();
+    }
+
+    _keyExtractor = (item, index) => item.id;
 
     _onSelectItem = (item) => {
+        this.unCompleteHabit(item);
     };
 
     _renderHabitItem = ({item}) => {
@@ -55,7 +86,7 @@ export default class CompletedHabits extends Component {
             <View style={styles.mainView}>
 
                 <FlatList
-                    data={this.state.habits_completed}
+                    data={this.props.habits_completed.items}
                     keyExtractor={this._keyExtractor}
                     renderItem={this._renderHabitItem}
                 />
@@ -94,3 +125,23 @@ const styles = StyleSheet.create({
 
     },
 });
+
+const mapStateToProps = (state) => {
+    return {
+        habits_completed: state.habits_completed,
+        user: state.user
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        refreshCompletedHabits: (habits) => {
+            return dispatch(refreshCompletedHabitsAction(habits))
+        }
+    }
+};
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(CompletedHabits);

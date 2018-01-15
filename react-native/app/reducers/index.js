@@ -1,6 +1,8 @@
 import { EDIT_HABIT } from "../actions/types";
 import { users as usersReducer } from './users';
 import { habits as habitsReducer } from './habits';
+import { habits_completed as habitsCompletedReducer } from './habits';
+import { categories as categoriesReducer } from './categories';
 
 const initialState = {
     // habits: {
@@ -25,15 +27,21 @@ const initialState = {
     //         }
     //     ]
     // },
+    user: {},
     habits: {
         items: []
     },
-    user: {}
+    habits_completed: {
+        items: []
+    },
+    categories: [],
 };
 
 export const reducer = (state = initialState, action) => {
     return {
+        user: usersReducer(state.user, action),
         habits: habitsReducer(state.habits, action),
-        user: usersReducer(state.user, action)
+        habits_completed: habitsCompletedReducer(state.habits_completed, action),
+        categories: categoriesReducer(state.categories, action)
     }
 };

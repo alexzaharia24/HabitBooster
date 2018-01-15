@@ -2,6 +2,12 @@ import * as types from '../actions/types';
 
 export const habits = (state = {}, action) => {
     switch (action.type) {
+        case types.REFRESH_HABITS:
+            console.log("Action: ", action.items);
+            return {
+                ...state,
+                items: action.items
+            };
         case types.FETCH_HABITS_STARTED:
             return {
                 ...state,
@@ -44,7 +50,20 @@ export const habits = (state = {}, action) => {
         default:
             return state;
     }
-}
+};
+
+export const habits_completed = (state = {}, action) => {
+    switch(action.type) {
+        case types.REFRESH_COMPLETED_HABITS:
+            console.log("Action: ", action.items);
+            return {
+                ...state,
+                items: action.items
+            };
+        default:
+            return state;
+    }
+};
 
 function updatedHabits(state = [], action) {
     return state.map((habit) => {
