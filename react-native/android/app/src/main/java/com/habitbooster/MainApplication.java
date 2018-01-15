@@ -7,6 +7,7 @@ import com.facebook.react.ReactApplication;
 import io.invertase.firebase.RNFirebasePackage;
 import io.invertase.firebase.auth.RNFirebaseAuthPackage;
 import io.invertase.firebase.database.RNFirebaseDatabasePackage;
+import io.invertase.firebase.messaging.RNFirebaseMessagingPackage;
 
 import com.horcrux.svg.SvgPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
@@ -33,6 +34,7 @@ public class MainApplication extends Application implements ReactApplication {
                     new RNFirebasePackage(),
                     new RNFirebaseAuthPackage(),
                     new RNFirebaseDatabasePackage(),
+                    new RNFirebaseMessagingPackage(),
                     new SvgPackage(),
                     new VectorIconsPackage()
             );

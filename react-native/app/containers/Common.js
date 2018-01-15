@@ -19,6 +19,8 @@ class CommonView extends Component {
     }
 
     componentDidMount() {
+        this.listenForNotifications();
+
         if(this.props.user.isAdmin) {
             this.fetchAndSyncCategories();
             Actions.adminHome();
@@ -29,6 +31,12 @@ class CommonView extends Component {
             Actions.home();
         }
 
+    }
+
+    listenForNotifications() {
+        firebase.messaging().onMessage(function(payload) {
+            Alert.alert("New notification",payload.fcm.body);
+        })
     }
 
     fetchAndSyncCategories() {
